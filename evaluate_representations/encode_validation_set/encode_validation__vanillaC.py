@@ -72,11 +72,11 @@ with open(chunk_filename) as f:
             ###########################
             # remove rows with no text
             del_idxs = []
-            for idx, row in enumerate(data):  # don't embed empty text
+            for rowidx, row in enumerate(data):  # don't embed empty text
                 if row[2] == '' and row[1] == '':
-                    del_idxs.append(idx)
-            for idx in sorted(del_idxs, reverse=True):
-                del data[idx]
+                    del_idxs.append(rowidx)
+            for delidx in sorted(del_idxs, reverse=True):
+                del data[delidx]
 
             abstracts = [t[1] + '. ' + t[2] for t in data]  # (pmid, title, abstract)
 
@@ -91,7 +91,7 @@ with open(chunk_filename) as f:
 
             entries = []
 
-            for idx, doc in enumerate(nlp.pipe(abstracts)):
+            for docidx, doc in enumerate(nlp.pipe(abstracts)):
                 
                 ############ control the representation here ##############
                 last_hidden_state = doc._.pytt_last_hidden_state
@@ -108,7 +108,7 @@ with open(chunk_filename) as f:
                 embedding *= (1.0 / count)
                 ###########################################################
                               
-                pmid = data[idx][0]
+                pmid = data[docidx][0]
                 entries.append((pmid, embedding.tolist(),))
 
             end_time = time.time()

@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "./encode_validation__scibertC.py", line 111, in <module>
-    rembedding += cp.asnumpy(last_hidden_state[idx,:])
-NameError: name 'rembedding' is not defined

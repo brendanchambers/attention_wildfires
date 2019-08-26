@@ -1,79 +1,100 @@
 My SLURM_ARRAY_TASK_I: 
 GPU sanity checks: 
 device ID: 0
-<torch.cuda.device object at 0x7fc05c31f2e8>
+<torch.cuda.device object at 0x7efdfa0103c8>
 N devices: 1
 Tesla K80
 is available? True
 Spacy GPU? True
-elapsed (s): 2.5873303413391113
+elapsed (s): 1.5165808200836182
 header: ['pmid', 'title', 'abstract']
 embedding subchunk number 0.0...
-elapsed (s): 0.02377796173095703
+elapsed (s): 0.024148941040039062
 processing batch of abstracts...
-elapsed: 6.1002113819122314
+elapsed: 0.7151589393615723
 writing embeddings to csv file...
-elapsed: 0.009542465209960938
+elapsed: 0.04434037208557129
 embedding subchunk number 1.0...
-elapsed (s): 0.4320690631866455
+elapsed (s): 0.2748832702636719
 processing batch of abstracts...
-elapsed: 976.2363874912262
+elapsed: 902.8995270729065
 writing embeddings to csv file...
-elapsed: 8.269565105438232
+elapsed: 7.536542177200317
 embedding subchunk number 2.0...
-elapsed (s): 8.465851783752441
+elapsed (s): 7.703546762466431
 processing batch of abstracts...
-elapsed: 738.3851580619812
+elapsed: 686.0885486602783
 writing embeddings to csv file...
-elapsed: 8.344398498535156
+elapsed: 7.759937763214111
 embedding subchunk number 3.0...
-elapsed (s): 8.83113408088684
+elapsed (s): 8.030362606048584
 processing batch of abstracts...
-elapsed: 758.3028962612152
+elapsed: 701.6405613422394
 writing embeddings to csv file...
-elapsed: 8.21514081954956
+elapsed: 7.454505205154419
 GPU sanity checks: 
 device ID: 0
-<torch.cuda.device object at 0x7f0ccdf352e8>
+<torch.cuda.device object at 0x7f251d59e390>
 N devices: 1
 Tesla K80
 is available? True
 Spacy GPU? True
-elapsed (s): 2.9498634338378906
+elapsed (s): 0.8033602237701416
 header: ['pmid', 'title', 'abstract']
 embedding subchunk number 0.0...
-elapsed (s): 0.01788496971130371
+elapsed (s): 0.0003039836883544922
 processing batch of abstracts...
-elapsed: 0.7789242267608643
+elapsed: 0.3643479347229004
 writing embeddings to csv file...
-elapsed: 0.009925365447998047
+elapsed: 0.008226394653320312
 embedding subchunk number 1.0...
-elapsed (s): 0.2870197296142578
+elapsed (s): 0.20999884605407715
 processing batch of abstracts...
-elapsed: 977.0241417884827
+elapsed: 899.2879922389984
 writing embeddings to csv file...
-elapsed: 8.163736820220947
+elapsed: 7.115295886993408
 embedding subchunk number 2.0...
-elapsed (s): 8.36424708366394
+elapsed (s): 7.280952453613281
 processing batch of abstracts...
-elapsed: 739.5875504016876
+elapsed: 674.8560357093811
 writing embeddings to csv file...
-elapsed: 8.074173212051392
+elapsed: 7.208240032196045
 embedding subchunk number 3.0...
-elapsed (s): 8.378777742385864
+elapsed (s): 7.384186267852783
 processing batch of abstracts...
-elapsed: 759.8568317890167
+elapsed: 691.2071783542633
 writing embeddings to csv file...
-elapsed: 8.106114149093628
+elapsed: 7.38530707359314
 GPU sanity checks: 
 device ID: 0
-<torch.cuda.device object at 0x7f5bbd515320>
+<torch.cuda.device object at 0x7f5ed3183400>
 N devices: 1
 Tesla K80
 is available? True
 Spacy GPU? True
-elapsed (s): 0.9522678852081299
+elapsed (s): 0.7882952690124512
 header: ['pmid', 'title', 'abstract']
 embedding subchunk number 0.0...
-elapsed (s): 0.0002079010009765625
+elapsed (s): 0.00031065940856933594
 processing batch of abstracts...
+elapsed: 0.3708956241607666
+writing embeddings to csv file...
+elapsed: 0.0021729469299316406
+embedding subchunk number 1.0...
+elapsed (s): 0.19061684608459473
+processing batch of abstracts...
+elapsed: 952.7712767124176
+writing embeddings to csv file...
+elapsed: 7.21651816368103
+embedding subchunk number 2.0...
+elapsed (s): 7.3845884799957275
+processing batch of abstracts...
+elapsed: 724.7985687255859
+writing embeddings to csv file...
+elapsed: 7.11049485206604
+embedding subchunk number 3.0...
+elapsed (s): 7.282394647598267
+processing batch of abstracts...
+elapsed: 742.0123770236969
+writing embeddings to csv file...
+elapsed: 7.131748199462891
