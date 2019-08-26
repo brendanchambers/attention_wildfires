@@ -107,9 +107,10 @@ with open(chunk_filename) as f:
                 count = 0
                 embedding = np.zeros( (D,) )
                 for idx, token in enumerate(word_pieces_):
-                    if len(token) >= min_length:
-                        embedding += cp.asnumpy(last_hidden_state[idx,:])
-                        count += 1
+                    if idx > 0:  # omit START token
+                        if len(token) >= min_length:
+                            embedding += cp.asnumpy(last_hidden_state[idx,:])
+                            count += 1
                 embedding *= (1.0 / count)
                 ###########################################################
                               
@@ -124,7 +125,7 @@ with open(chunk_filename) as f:
             print('writing embeddings to csv file...')
             start_time = time.time()
             
-            with open(embedding_target_path + embedding_flavor + '.csv', 'w') as f:
+            with open(embedding_target_path + embedding_flavor + '.csv', 'a') as f:
                 csv_out = csv.writer(f, delimiter=' ')
                 for row_ in entries:
                     csv_out.writerow(row_)

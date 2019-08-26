@@ -1,100 +1,100 @@
 My SLURM_ARRAY_TASK_I: 
 GPU sanity checks: 
 device ID: 0
-<torch.cuda.device object at 0x7efdfa0103c8>
+<torch.cuda.device object at 0x7f97cf32e3c8>
 N devices: 1
 Tesla K80
 is available? True
 Spacy GPU? True
-elapsed (s): 1.5165808200836182
+elapsed (s): 1.5887298583984375
 header: ['pmid', 'title', 'abstract']
 embedding subchunk number 0.0...
-elapsed (s): 0.024148941040039062
+elapsed (s): 0.03707313537597656
 processing batch of abstracts...
-elapsed: 0.7151589393615723
+elapsed: 3.3069326877593994
 writing embeddings to csv file...
-elapsed: 0.04434037208557129
+elapsed: 0.016771793365478516
 embedding subchunk number 1.0...
-elapsed (s): 0.2748832702636719
+elapsed (s): 0.28775858879089355
 processing batch of abstracts...
-elapsed: 902.8995270729065
+elapsed: 903.8913362026215
 writing embeddings to csv file...
-elapsed: 7.536542177200317
+elapsed: 7.4955456256866455
 embedding subchunk number 2.0...
-elapsed (s): 7.703546762466431
+elapsed (s): 7.670643329620361
 processing batch of abstracts...
-elapsed: 686.0885486602783
+elapsed: 687.7991917133331
 writing embeddings to csv file...
-elapsed: 7.759937763214111
+elapsed: 7.440185070037842
 embedding subchunk number 3.0...
-elapsed (s): 8.030362606048584
+elapsed (s): 7.750446557998657
 processing batch of abstracts...
-elapsed: 701.6405613422394
+elapsed: 705.8924534320831
 writing embeddings to csv file...
-elapsed: 7.454505205154419
+elapsed: 7.414968490600586
 GPU sanity checks: 
 device ID: 0
-<torch.cuda.device object at 0x7f251d59e390>
+<torch.cuda.device object at 0x7f2e32ea6390>
 N devices: 1
 Tesla K80
 is available? True
 Spacy GPU? True
-elapsed (s): 0.8033602237701416
+elapsed (s): 0.7890005111694336
 header: ['pmid', 'title', 'abstract']
 embedding subchunk number 0.0...
-elapsed (s): 0.0003039836883544922
+elapsed (s): 0.0002942085266113281
 processing batch of abstracts...
-elapsed: 0.3643479347229004
+elapsed: 0.3585648536682129
 writing embeddings to csv file...
-elapsed: 0.008226394653320312
+elapsed: 0.006421089172363281
 embedding subchunk number 1.0...
-elapsed (s): 0.20999884605407715
+elapsed (s): 0.20153474807739258
 processing batch of abstracts...
-elapsed: 899.2879922389984
+elapsed: 903.2985265254974
 writing embeddings to csv file...
-elapsed: 7.115295886993408
+elapsed: 7.425618886947632
 embedding subchunk number 2.0...
-elapsed (s): 7.280952453613281
+elapsed (s): 7.5936572551727295
 processing batch of abstracts...
-elapsed: 674.8560357093811
+elapsed: 685.653032541275
 writing embeddings to csv file...
-elapsed: 7.208240032196045
+elapsed: 7.3164448738098145
 embedding subchunk number 3.0...
-elapsed (s): 7.384186267852783
+elapsed (s): 7.4972686767578125
 processing batch of abstracts...
-elapsed: 691.2071783542633
+elapsed: 702.8232131004333
 writing embeddings to csv file...
-elapsed: 7.38530707359314
+elapsed: 7.449065208435059
 GPU sanity checks: 
 device ID: 0
-<torch.cuda.device object at 0x7f5ed3183400>
+<torch.cuda.device object at 0x7f3dca0f8400>
 N devices: 1
 Tesla K80
 is available? True
 Spacy GPU? True
-elapsed (s): 0.7882952690124512
+elapsed (s): 0.7910740375518799
 header: ['pmid', 'title', 'abstract']
 embedding subchunk number 0.0...
-elapsed (s): 0.00031065940856933594
+elapsed (s): 0.00031304359436035156
 processing batch of abstracts...
-elapsed: 0.3708956241607666
+elapsed: 0.37561631202697754
 writing embeddings to csv file...
-elapsed: 0.0021729469299316406
+elapsed: 0.012447595596313477
 embedding subchunk number 1.0...
-elapsed (s): 0.19061684608459473
+elapsed (s): 0.21302366256713867
 processing batch of abstracts...
-elapsed: 952.7712767124176
+elapsed: 967.2356967926025
 writing embeddings to csv file...
-elapsed: 7.21651816368103
+elapsed: 7.2685418128967285
 embedding subchunk number 2.0...
-elapsed (s): 7.3845884799957275
+elapsed (s): 7.433136224746704
 processing batch of abstracts...
-elapsed: 724.7985687255859
+elapsed: 736.9289779663086
 writing embeddings to csv file...
-elapsed: 7.11049485206604
+elapsed: 7.392319679260254
 embedding subchunk number 3.0...
-elapsed (s): 7.282394647598267
+elapsed (s): 7.658409118652344
 processing batch of abstracts...
-elapsed: 742.0123770236969
+elapsed: 754.7048442363739
 writing embeddings to csv file...
-elapsed: 7.131748199462891
+elapsed: 7.463279962539673

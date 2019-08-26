@@ -115,7 +115,7 @@ with open(chunk_filename) as f:
             print('writing embeddings to csv file...')
             start_time = time.time()
             
-            with open(embedding_target_path + embedding_flavor + '.csv', 'w') as f:
+            with open(embedding_target_path + embedding_flavor + '.csv', 'a') as f:
                 csv_out = csv.writer(f, delimiter=' ')
                 for row_ in entries:
                     csv_out.writerow(row_)
