@@ -102,7 +102,7 @@ with open(chunk_filename) as f:
                 count = 0
                 embedding = np.zeros( (D,) )
                 for idx, token in enumerate(word_pieces_):
-                    if idx > 0:  # omit START token
+                    if not(token == '[CLS]'):
                         if len(token) >= min_length:
                             embedding += cp.asnumpy(last_hidden_state[idx,:])
                             count += 1
