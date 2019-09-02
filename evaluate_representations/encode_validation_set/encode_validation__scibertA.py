@@ -39,10 +39,10 @@ if is_using_gpu:
 
 name = "scibert-scivocab-uncased"
 path = "/project2/jevans/brendan/pretrained_transformers/scibert-scivocab-uncased"
-nlp = PyTT_Language(pytt_name=name, meta={"lang": "en"})
+nlp = PyTT_Language(pytt_namnlp.add_pipe(PyTT_TokenVectorEncoder.from_pretrained(nlp.vocab, path))
+e=name, meta={"lang": "en"})
 nlp.add_pipe(nlp.create_pipe("sentencizer"))
 nlp.add_pipe(PyTT_WordPiecer.from_pretrained(nlp.vocab, path))
-nlp.add_pipe(PyTT_TokenVectorEncoder.from_pretrained(nlp.vocab, path))
 
 end_time = time.time()
 print('elapsed (s): {}'.format(end_time - start_time))
