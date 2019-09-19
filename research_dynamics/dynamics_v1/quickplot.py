@@ -16,6 +16,8 @@ import time
 
 ######
 
+print('specifying paths...')
+
 top_level_path = '/project2/jevans/brendan/pubmed_data_processing/year_pmids/'
 figure_output_path = '/home/brendanchambers/wildfires/v3_github/research_dynamics/dynamics_v1/'
 pubs_dir = top_level_path + 'publication_embeddings/'
@@ -23,10 +25,13 @@ cites_dir = top_level_path + 'citation_embeddings/'
 
 ######
 
+print('pop open pickle jar: pca model...')
+
 pca_path ="/project2/jevans/brendan/pubmed_data_processing/dimensionality_reduction_models/pca_models/pca_model0.pkl"
 with open(pca_path, 'rb') as file:
     pca_model = pickle.load(file)
 
+print('pop open pickle jar: umap model...')
 umap4pca_path = "/project2/jevans/brendan/pubmed_data_processing/dimensionality_reduction_models/umap2D/umap_model0_forPCA.pkl"
 # this was fit with 300D pca vectors which can be regenerated using ../pca_models/pca_model0.pkl
 with open(umap4pca_path, 'rb') as file:
@@ -97,7 +102,8 @@ print(umap_model)
 # pre-fit manifold structure, from sample0 (representative corpus-wide set of pmids)
 plt.figure()
 sns.kdeplot(umap_model.embedding_[:,0], umap_model.embedding_[:,1])
-plt.show()
+plt.savefig(figure_output_path + 'yearsteps/umap4pca_baseline_sample0.png')
+plt.savefig(figure_output_path + 'yearsteps/umap4pca_baseline_sample0.svg')
 
 start_year = 1958
 end_year = 1999

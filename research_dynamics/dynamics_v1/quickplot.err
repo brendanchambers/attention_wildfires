@@ -1,3 +1,0 @@
-QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/jobs/62543290/runtime-brendanchambers'
-qt.qpa.screen: QXcbConnection: Could not connect to display :50
-Could not connect to any X display.
