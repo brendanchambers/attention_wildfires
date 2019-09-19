@@ -41,7 +41,7 @@ with open(umap4pca_path, 'rb') as file:
 # helper function for the two dimensionality reduction density plots
 
 # simplified version - for one year
-def plot_pubs_and_cites(): 
+def plot_pubs_and_cites(year): 
     (f, ax) = plt.subplots(1,
                        2,
                        sharex='all', sharey='all',
@@ -62,11 +62,11 @@ def plot_pubs_and_cites():
                 cmap='Reds')
     ax[1].set_title('cited: {}'.format(year))
 
-    plt.savefig(figure_output_path + 'yearsteps/yearstep pca {} - {}.png'.format(start_year, end_year))
-    plt.savefig(figure_output_path + 'yearsteps/yearstep pca {} - {}.svg'.format(start_year, end_year))
+    plt.savefig(figure_output_path + 'yearsteps/yearstep pca {}.png'.format(year))
+    plt.savefig(figure_output_path + 'yearsteps/yearstep pca {}.svg'.format(year))
     
 # umap version
-def umap_pubs_and_cites():
+def umap_pubs_and_cites(year):
     
     um_pubs = umap_model.transform(pub_data['embeddings'])
     um_cites = umap_model.transform(cite_data['embeddings'])
@@ -90,8 +90,8 @@ def umap_pubs_and_cites():
                 cmap='Reds')
     ax[1].set_title('cited: {}'.format(year))
 
-    plt.savefig(figure_output_path + 'yearsteps/yearstep umap4pca0 {} - {}.png'.format(start_year, end_year))
-    plt.savefig(figure_output_path + 'yearsteps/yearstep umap4pca0 {} - {}.svg'.format(start_year, end_year))
+    plt.savefig(figure_output_path + 'yearsteps/yearstep umap4pca0 {}.png'.format(year))
+    plt.savefig(figure_output_path + 'yearsteps/yearstep umap4pca0 {}.svg'.format(year))
 
 
 ######
@@ -124,13 +124,10 @@ for year in range(start_year, end_year+1):
         cite_data = json.load(f)
     cite_data['embeddings'] = np.array(cite_data['embeddings'])
     
-    umap_pubs_and_cites()
+    umap_pubs_and_cites(year)
 
 ######
 # plot yearstep pca style
-
-start_year = 1958
-end_year = 1999
 
 for year in range(start_year, end_year+1):
     print(year)
@@ -147,7 +144,7 @@ for year in range(start_year, end_year+1):
         cite_data = json.load(f)
     cite_data['embeddings'] = np.array(cite_data['embeddings'])
     
-    plot_pubs_and_cites()
+    plot_pubs_and_cites(year)
     
 
 
