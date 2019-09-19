@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 plt.rcParams['svg.fonttype'] = 'none'
 
-import 
+import time
 
 ######
 
@@ -59,7 +59,6 @@ def plot_pubs_and_cites():
 
     plt.savefig(figure_output_path + 'yearsteps/yearstep pca {} - {}.png'.format(start_year, end_year))
     plt.savefig(figure_output_path + 'yearsteps/yearstep pca {} - {}.svg'.format(start_year, end_year))
-    plt.show()
     
 # umap version
 def umap_pubs_and_cites():
@@ -88,7 +87,7 @@ def umap_pubs_and_cites():
 
     plt.savefig(figure_output_path + 'yearsteps/yearstep umap4pca0 {} - {}.png'.format(start_year, end_year))
     plt.savefig(figure_output_path + 'yearsteps/yearstep umap4pca0 {} - {}.svg'.format(start_year, end_year))
-    plt.show()
+
 
 ######
 # plot year state umap style
