@@ -17,6 +17,7 @@ import
 ######
 
 top_level_path = '/project2/jevans/brendan/pubmed_data_processing/year_pmids/'
+figure_output_path = '/home/brendanchambers/wildfires/v3_github/research_dynamics/dynamics_v1/'
 pubs_dir = top_level_path + 'publication_embeddings/'
 cites_dir = top_level_path + 'citation_embeddings/'
 
@@ -56,8 +57,8 @@ def plot_pubs_and_cites():
                 cmap='Reds')
     ax[1].set_title('cited: {}'.format(year))
 
-    plt.savefig('yearsteps/yearstep pca {} - {}.png'.format(start_year, end_year))
-    plt.savefig('yearsteps/yearstep pca {} - {}.svg'.format(start_year, end_year))
+    plt.savefig(figure_output_path + 'yearsteps/yearstep pca {} - {}.png'.format(start_year, end_year))
+    plt.savefig(figure_output_path + 'yearsteps/yearstep pca {} - {}.svg'.format(start_year, end_year))
     plt.show()
     
 # umap version
@@ -85,8 +86,8 @@ def umap_pubs_and_cites():
                 cmap='Reds')
     ax[1].set_title('cited: {}'.format(year))
 
-    plt.savefig('yearsteps/yearstep umap4pca0 {} - {}.png'.format(start_year, end_year))
-    plt.savefig('yearsteps/yearstep umap4pca0 {} - {}.svg'.format(start_year, end_year))
+    plt.savefig(figure_output_path + 'yearsteps/yearstep umap4pca0 {} - {}.png'.format(start_year, end_year))
+    plt.savefig(figure_output_path + 'yearsteps/yearstep umap4pca0 {} - {}.svg'.format(start_year, end_year))
     plt.show()
 
 ######
