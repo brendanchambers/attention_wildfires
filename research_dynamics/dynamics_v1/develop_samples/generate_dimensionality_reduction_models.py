@@ -7,6 +7,7 @@ import json
 
 import numpy as np
 from sklearn.decomposition import PCA
+import umap
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -18,7 +19,8 @@ import time
 #####
 
 # path to save the generated pca models
-model_output_path = '/project2/jevans/brendan/pubmed_data_processing/pca_models/'
+model_output_path = '/project2/jevans/brendan/pubmed_data_processing/dimensionality_reduction_models/pca_models/'
+umap_output_path = '/project2/jevans/brendan/pubmed_data_processing/dimensionality_reduction_models/umap2D/'
 
 # mysql specs
 db_name = 'test_pubmed'
@@ -94,6 +96,8 @@ for sampleset_id in range(N_samplesets):  # id for pregenerated sample pmids (in
     pkl_filename = model_output_path + "pca_model_{}.pkl".format(sampleset_id)
     with open(pkl_filename, 'wb') as file:
         pickle.dump(pca, file)
+        
+    
 
     ####
     # visualization
@@ -124,6 +128,10 @@ for sampleset_id in range(N_samplesets):  # id for pregenerated sample pmids (in
     D_umap = 2
     reducer = umap.UMAP(n_components=D_umap)
     um = reducer.fit_transform(sample_embeddings)    # concatenated
+    
+    pkl_filename_umap = umap_output_path + "umap2D_{}.pkl".format(sampleset_id)
+    with open(pkl_filename_umap, 'wb') as file:
+        pickle.dump(reducer, file)  # save fitted model
 
     plt.figure()
     sns.kdeplot(um[:,0],um[:,1])
