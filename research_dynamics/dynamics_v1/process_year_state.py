@@ -32,7 +32,7 @@ with open(pca_path, 'rb') as file:
 #########################
 ## control params
 
-temp_altstart = 2000 # todo delete temp_altstart
+temp_altstart = 2002 # todo delete temp_altstart
 start_year = 1958
 end_year = 2018
 D_truncate = 300
