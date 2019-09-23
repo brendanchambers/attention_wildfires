@@ -25,7 +25,7 @@ output_path = '/project2/jevans/brendan/pubmed_data_processing/year_pmids/'
 ########################
 ## load pre-fit pca models (fit using samples (size=100k) from the full corpus)
 
-pca_path = 'develop_samples/pca_model1.pkl'  # more located at /project2...
+pca_path = '/project2/jevans/brendan/pubmed_data_processing/dimensionality_reduction_models/pca_models/pca_model0.pkl'  # more located at /project2...
 with open(pca_path, 'rb') as file:
     pca_model = pickle.load(file)
     
