@@ -3,15 +3,15 @@ Input arguments: ['./embed_pubmed__array_gpu_job.py', '1']
 slurm array id: 1
 GPU sanity checks: 
 device ID: 0
-<torch.cuda.device object at 0x7f101327c4a8>
+<torch.cuda.device object at 0x7f397d8124a8>
 N devices: 1
 Tesla K80
 is available? True
 Spacy GPU? True
-elapsed (s): 2.4524405002593994
+elapsed (s): 1.1727452278137207
 embedding subchunk number 0.0...
-elapsed (s): 0.0012824535369873047
+elapsed (s): 0.004611968994140625
 processing batch of abstracts...
-elapsed: 5.157417297363281
+elapsed: 0.7353434562683105
 writing embeddings to csv file...
-elapsed: 0.1306445598602295
+elapsed: 0.5458083152770996

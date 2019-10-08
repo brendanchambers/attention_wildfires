@@ -1,6 +1,6 @@
 #  step through years and visualize in PCA space
 
-import pymysql
+import mysql.connector as mysql
 import pickle
 import json
 
@@ -18,7 +18,8 @@ import time
 
 db_name = 'test_pubmed'  # db name collisons? https://stackoverflow.com/questions/14011968/user-cant-access-a-database
 client_config = {'unix_socket':'/home/brendanchambers/.sql.sock',
-                'database': db_name}
+                'database': db_name,
+                'use_pure': True}  # for python connector
 output_path = '/project2/jevans/brendan/pubmed_data_processing/year_pmids/'
 
 ########################
@@ -31,7 +32,7 @@ with open(pca_path, 'rb') as file:
 #########################
 ## control params
 
-temp_altstart = 1975 # todo delete temp_altstart
+#temp_altstart = 2007 # todo delete temp_altstart
 start_year = 1958
 end_year = 2018
 D_truncate = 768
@@ -43,11 +44,11 @@ path2dir = '/project2/jevans/brendan/pubmed_data_processing/year_pmids/'
 process_pubs = True 
 if process_pubs:
     year_pubs = {}
-    for year in range(temp_altstart, end_year+1):  # todo: use start_year, delete temp_altstart
+    for year in range(start_year, end_year+1): # start_year, end_year+1):  # todo: use start_year, delete temp_altstart
 
         print('{}...'.format(year))
 
-        db = pymysql.connect(**client_config)
+        db = mysql.connect(**client_config)
 
         filename = 'pubmed_state_{}'.format(year)
         path2pmids = path2dir + filename
@@ -66,7 +67,7 @@ if process_pubs:
                 WHERE E.pmid IN ({})'''.format(str_fmt)
 
         start_time = time.time()
-        cursor = db.cursor()
+        cursor = db.cursor(buffered=False)
         cursor.execute(sql)
         end_time = time.time()
         elapsed = end_time - start_time
@@ -115,7 +116,7 @@ for year in range(start_year, end_year+1):  # todo change back to start_year
     
     print('{}...'.format(year))
     
-    db = pymysql.connect(**client_config)
+    db = mysql.connect(**client_config)
 
     filename = 'pubmed_state_{}'.format(year)
     path2pmids = path2dir + filename
@@ -134,7 +135,7 @@ for year in range(start_year, end_year+1):  # todo change back to start_year
             WHERE E.pmid IN ({})'''.format(str_fmt)
     
     start_time = time.time()
-    cursor = db.cursor()
+    cursor = db.cursor(buffered=False)
     cursor.execute(sql)
     end_time = time.time()
     elapsed = end_time - start_time

@@ -1,34 +1,36 @@
-2019-09-22 22:05:46 0 [Warning] option 'max_allowed_packet': unsigned value 17179869184 adjusted to 1073741824
-2019-09-22 22:05:46 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
-2019-09-22 22:05:46 0 [Note] mysqld (mysqld 5.6.26) starting as process 8716 ...
-2019-09-22 22:05:47 8716 [Note] Plugin 'FEDERATED' is disabled.
-2019-09-22 22:05:47 8716 [Note] InnoDB: Using atomics to ref count buffer pool pages
-2019-09-22 22:05:47 8716 [Note] InnoDB: The InnoDB memory heap is disabled
-2019-09-22 22:05:47 8716 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
-2019-09-22 22:05:47 8716 [Note] InnoDB: Memory barrier is not used
-2019-09-22 22:05:47 8716 [Note] InnoDB: Compressed tables use zlib 1.2.3
-2019-09-22 22:05:47 8716 [Note] InnoDB: Using Linux native AIO
-2019-09-22 22:05:47 8716 [Note] InnoDB: Using CPU crc32 instructions
-2019-09-22 22:05:47 8716 [Note] InnoDB: Initializing buffer pool, size = 512.0M
-2019-09-22 22:05:47 8716 [Note] InnoDB: Completed initialization of buffer pool
-2019-09-22 22:05:48 8716 [Note] InnoDB: Highest supported file format is Barracuda.
-2019-09-22 22:05:48 8716 [Note] InnoDB: The log sequence numbers 687242247278 and 687242247278 in ibdata files do not match the log sequence number 687242256091 in the ib_logfiles!
-2019-09-22 22:05:48 8716 [Note] InnoDB: Database was not shutdown normally!
-2019-09-22 22:05:48 8716 [Note] InnoDB: Starting crash recovery.
-2019-09-22 22:05:48 8716 [Note] InnoDB: Reading tablespace information from the .ibd files...
-2019-09-22 22:05:52 8716 [Note] InnoDB: Restoring possible half-written data pages 
-2019-09-22 22:05:52 8716 [Note] InnoDB: from the doublewrite buffer...
-2019-09-22 22:05:56 8716 [Note] InnoDB: 128 rollback segment(s) are active.
-2019-09-22 22:05:56 8716 [Note] InnoDB: Waiting for purge to start
-2019-09-22 22:05:56 8716 [Note] InnoDB: 5.6.26 started; log sequence number 687242256091
-2019-09-22 22:05:56 8716 [Note] Server hostname (bind-address): '*'; port: 3306
-2019-09-22 22:05:56 8716 [Note] IPv6 is available.
-2019-09-22 22:05:56 8716 [Note]   - '::' resolves to '::';
-2019-09-22 22:05:56 8716 [Note] Server socket created on IP: '::'.
-2019-09-22 22:06:00 8716 [Note] Event Scheduler: Loaded 0 events
-2019-09-22 22:06:00 8716 [Note] mysqld: ready for connections.
+2019-10-08 14:10:03 0 [Warning] option 'max_allowed_packet': unsigned value 17179869184 adjusted to 1073741824
+2019-10-08 14:10:03 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-10-08 14:10:03 0 [Note] mysqld (mysqld 5.6.26) starting as process 37743 ...
+2019-10-08 14:10:03 37743 [Note] Plugin 'FEDERATED' is disabled.
+2019-10-08 14:10:03 37743 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2019-10-08 14:10:03 37743 [Note] InnoDB: The InnoDB memory heap is disabled
+2019-10-08 14:10:03 37743 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-10-08 14:10:03 37743 [Note] InnoDB: Memory barrier is not used
+2019-10-08 14:10:03 37743 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-08 14:10:03 37743 [Note] InnoDB: Using Linux native AIO
+2019-10-08 14:10:03 37743 [Note] InnoDB: Using CPU crc32 instructions
+2019-10-08 14:10:03 37743 [Note] InnoDB: Initializing buffer pool, size = 512.0M
+2019-10-08 14:10:03 37743 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-08 14:10:03 37743 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-08 14:10:03 37743 [Note] InnoDB: The log sequence numbers 687242247278 and 687242247278 in ibdata files do not match the log sequence number 722405028086 in the ib_logfiles!
+2019-10-08 14:10:03 37743 [Note] InnoDB: Database was not shutdown normally!
+2019-10-08 14:10:03 37743 [Note] InnoDB: Starting crash recovery.
+2019-10-08 14:10:03 37743 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2019-10-08 14:10:04 37743 [Note] InnoDB: Restoring possible half-written data pages 
+2019-10-08 14:10:04 37743 [Note] InnoDB: from the doublewrite buffer...
+2019-10-08 14:10:06 37743 [Note] InnoDB: 128 rollback segment(s) are active.
+2019-10-08 14:10:06 37743 [Note] InnoDB: Waiting for purge to start
+2019-10-08 14:10:06 37743 [Note] InnoDB: 5.6.26 started; log sequence number 722405028086
+2019-10-08 14:10:06 37743 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-10-08 14:10:06 37743 [Note] IPv6 is available.
+2019-10-08 14:10:06 37743 [Note]   - '::' resolves to '::';
+2019-10-08 14:10:06 37743 [Note] Server socket created on IP: '::'.
+2019-10-08 14:10:07 37743 [Note] Event Scheduler: Loaded 0 events
+2019-10-08 14:10:07 37743 [Note] mysqld: ready for connections.
 Version: '5.6.26'  socket: '/home/brendanchambers/.sql.sock'  port: 3306  Source distribution
+/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/sklearn/base.py:306: UserWarning: Trying to unpickle estimator PCA from version 0.20.3 when using version 0.21.1. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
 Traceback (most recent call last):
-  File "./process_year_state.py", line 29, in <module>
-    with open(pca_path, 'rb') as file:
-FileNotFoundError: [Errno 2] No such file or directory: 'develop_samples/pca_model1.pkl'
+  File "./process_year_state.py", line 69, in <module>
+    cursor = db.cursor(buffered=False)
+TypeError: cursor() got an unexpected keyword argument 'buffered'

@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "./embed_pubmed__array_gpu_job.py", line 96, in <module>
+    for idx, doc in enumerate(nlp.pipe(abstracts)):
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/spacy/language.py", line 751, in pipe
+    for doc in docs:
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/spacy_pytorch_transformers/tok2vec.py", line 113, in pipe
+    outputs = self.predict(docs)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/spacy_pytorch_transformers/tok2vec.py", line 146, in predict
+    return self.model.predict(docs)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/thinc/neural/_classes/model.py", line 133, in predict
+    y, _ = self.begin_update(X, drop=None)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/spacy_pytorch_transformers/tok2vec.py", line 372, in sentence_fwd
+    sent_acts, bp_sent_acts = layer.begin_update(sents, drop=drop)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/thinc/neural/_classes/feed_forward.py", line 46, in begin_update
+    X, inc_layer_grad = layer.begin_update(X, drop=drop)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/spacy_pytorch_transformers/tok2vec.py", line 326, in apply_model_to_batches
+    activs, get_dX = model.begin_update(X, drop=drop)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/spacy_pytorch_transformers/tok2vec.py", line 249, in with_truncate_forward
+    return model.begin_update(X, drop=drop)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/spacy_pytorch_transformers/wrapper.py", line 59, in begin_update
+    return self.predict(ids), None
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/spacy_pytorch_transformers/wrapper.py", line 49, in predict
+    y_var = self._model(ids, **model_kwargs)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/torch/nn/modules/module.py", line 493, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/pytorch_transformers/modeling_bert.py", line 711, in forward
+    pooled_output = self.pooler(sequence_output)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/torch/nn/modules/module.py", line 493, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/pytorch_transformers/modeling_bert.py", line 464, in forward
+    first_token_tensor = hidden_states[:, 0]
+IndexError: index 0 is out of bounds for dimension 1 with size 0

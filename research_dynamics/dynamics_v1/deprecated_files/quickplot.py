@@ -105,8 +105,8 @@ sns.kdeplot(umap_model.embedding_[:,0], umap_model.embedding_[:,1])
 plt.savefig(figure_output_path + 'yearsteps/umap4pca_baseline_sample0.png')
 plt.savefig(figure_output_path + 'yearsteps/umap4pca_baseline_sample0.svg')
 
-start_year = 1989
-end_year = 2001
+start_year = 2000
+end_year = 2007
 
 for year in range(start_year, end_year+1):
     print(year)

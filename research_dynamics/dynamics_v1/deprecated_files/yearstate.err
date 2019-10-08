@@ -1,0 +1,48 @@
+2019-09-27 13:20:28 0 [Warning] option 'max_allowed_packet': unsigned value 17179869184 adjusted to 1073741824
+2019-09-27 13:20:28 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-09-27 13:20:28 0 [Note] mysqld (mysqld 5.6.26) starting as process 39149 ...
+2019-09-27 13:20:29 39149 [Note] Plugin 'FEDERATED' is disabled.
+2019-09-27 13:20:29 39149 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2019-09-27 13:20:29 39149 [Note] InnoDB: The InnoDB memory heap is disabled
+2019-09-27 13:20:29 39149 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-09-27 13:20:29 39149 [Note] InnoDB: Memory barrier is not used
+2019-09-27 13:20:29 39149 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-09-27 13:20:29 39149 [Note] InnoDB: Using Linux native AIO
+2019-09-27 13:20:29 39149 [Note] InnoDB: Using CPU crc32 instructions
+2019-09-27 13:20:29 39149 [Note] InnoDB: Initializing buffer pool, size = 512.0M
+2019-09-27 13:20:29 39149 [Note] InnoDB: Completed initialization of buffer pool
+2019-09-27 13:20:29 39149 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-09-27 13:20:29 39149 [Note] InnoDB: The log sequence numbers 687242247278 and 687242247278 in ibdata files do not match the log sequence number 687242373911 in the ib_logfiles!
+2019-09-27 13:20:29 39149 [Note] InnoDB: Database was not shutdown normally!
+2019-09-27 13:20:29 39149 [Note] InnoDB: Starting crash recovery.
+2019-09-27 13:20:29 39149 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2019-09-27 13:20:30 39149 [Note] InnoDB: Restoring possible half-written data pages 
+2019-09-27 13:20:30 39149 [Note] InnoDB: from the doublewrite buffer...
+2019-09-27 13:20:31 39149 [Note] InnoDB: 128 rollback segment(s) are active.
+2019-09-27 13:20:31 39149 [Note] InnoDB: Waiting for purge to start
+2019-09-27 13:20:31 39149 [Note] InnoDB: 5.6.26 started; log sequence number 687242373911
+2019-09-27 13:20:31 39149 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-09-27 13:20:31 39149 [Note] IPv6 is available.
+2019-09-27 13:20:31 39149 [Note]   - '::' resolves to '::';
+2019-09-27 13:20:31 39149 [Note] Server socket created on IP: '::'.
+2019-09-27 13:20:32 39149 [Note] Event Scheduler: Loaded 0 events
+2019-09-27 13:20:32 39149 [Note] mysqld: ready for connections.
+Version: '5.6.26'  socket: '/home/brendanchambers/.sql.sock'  port: 3306  Source distribution
+Traceback (most recent call last):
+  File "./process_year_state.py", line 145, in <module>
+    for i,row in enumerate(cursor):
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/mysql/connector/cursor.py", line 878, in fetchone
+    row = self._fetch_row()
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/mysql/connector/cursor.py", line 860, in _fetch_row
+    binary=self._binary, columns=self.description, raw=raw)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/mysql/connector/connection.py", line 469, in get_row
+    raw=raw)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/mysql/connector/connection.py", line 502, in get_rows
+    raise err
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/mysql/connector/connection.py", line 499, in get_rows
+    count=count)
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/mysql/connector/protocol.py", line 337, in read_text_result
+    packet = sock.recv()
+  File "/home/brendanchambers/.conda/envs/embedding-base/lib/python3.7/site-packages/mysql/connector/network.py", line 272, in recv_plain
+    raise errors.InterfaceError(errno=2013)
+mysql.connector.errors.InterfaceError: 2013: Lost connection to MySQL server during query

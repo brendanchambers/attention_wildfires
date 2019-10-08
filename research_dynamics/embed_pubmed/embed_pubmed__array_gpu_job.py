@@ -74,8 +74,8 @@ with open(chunk_filename) as f:
             ###########################
             # remove rows with no text
             del_idxs = []
-            for idx, row in enumerate(data):  # don't embed empty text
-                if row[2] == '' and row[1] == '':
+            for idx, row in enumerate(data):  # don't embed if there is no title & abstract
+                if row[2] == '' or row[1] == '':
                     del_idxs.append(idx)
             for idx in sorted(del_idxs, reverse=True):
                 del data[idx]
@@ -98,6 +98,8 @@ with open(chunk_filename) as f:
                 last_hidden_state = doc._.pytt_last_hidden_state
                 embedding_cupy = np.mean(last_hidden_state[1:,:], 0)
                 embedding = cp.asnumpy(embedding_cupy)
+                # note: revising datatype, Oct 2 2019:
+                embedding = embedding.astype('float16')  # 64 bits -> 16 bits
                 ###########################################################
                 pmid = data[idx][0]
                 entries.append((pmid, embedding.tolist(),))

@@ -1,6 +1,9 @@
 # take some big samples of papers and generate reduced dimensional spaces suitable for use with
 #   the entire dataset
 
+
+# note - have never run this - this is a draft for the future
+
 import mysql.connector as mysql
 import pickle
 import json
