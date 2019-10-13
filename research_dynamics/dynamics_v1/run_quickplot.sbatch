@@ -4,7 +4,8 @@
 #SBATCH --output=quickplot.out
 #SBATCH --error=quickplot.err
 #SBATCH --time=36:00:00
-#SBATCH --exclusive
+#SBATCH --ntasks=14
+#SBATCH --mem=256G
 #SBATCH --partition=bigmem2
 
 module load Anaconda3/5.3.0

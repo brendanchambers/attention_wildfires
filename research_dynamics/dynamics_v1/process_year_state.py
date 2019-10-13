@@ -31,7 +31,7 @@ with open(pca_path, 'rb') as file:
 #########################
 ## control params
 
-temp_altstart = 1975 # todo delete temp_altstart
+temp_altstart = 2010 # todo delete temp_altstart
 start_year = 1958
 end_year = 2018
 D_truncate = 768
@@ -40,7 +40,7 @@ path2dir = '/project2/jevans/brendan/pubmed_data_processing/year_pmids/'
 ###########################
 ## load year publication pmids & join to embeddings
 
-process_pubs = True 
+process_pubs = False 
 if process_pubs:
     year_pubs = {}
     for year in range(temp_altstart, end_year+1):  # todo: use start_year, delete temp_altstart
@@ -111,7 +111,7 @@ if process_pubs:
 
 year_cites = {}
 
-for year in range(start_year, end_year+1):  # todo change back to start_year
+for year in range(temp_altstart, end_year+1):  # todo change back to start_year
     
     print('{}...'.format(year))
     
