@@ -18,10 +18,8 @@ import time
 ftp_target_dir =  'ftp.ncbi.nlm.nih.gov' # 'ftp://ftp.ncbi.nlm.nih.gov/pubmed/baseline'
 ftp_subdir = '/pubmed/baseline/'
 
-#local_data_directory = '/home/brch/Data/pubmed_xml/'
-#local_data_directory = '/media/brch/Seagate Backup Plus Drive/Data/pubmed_xml/'
-#local_data_directory = '/media/jevans/temporary_bc_data_storage/pubmed_xml/'
-local_data_directory = '/media/midway/pubmed/xml/'
+#local_data_directory = '/home/brch/Data/pubmed/xml/'
+#local_data_directory = '/media/midway/pubmed/xml/'
 
 
 ################################################
@@ -45,20 +43,18 @@ print(sc._conf.getAll())
 
 def ftp_helper(namestr):
     # local save file for ftp'd xml
-    target = target_brdcst.value + namestr.split('.')[0] + '.xml'  # pubmed year chunk# .xml
+    target = target_brdcst.value + namestr.split('.')[0] + '.xml.gz'  # pubmed year chunk# .xml
     try:
         with FTP(ftp_dir_broadcast.value) as ftp:
             ftp.login()
-            # ftp.cwd(ftp_subdir_broadcast.value)
-            # with open(target, 'w') as f:
-            # target = ftp_subdir_broadcast.value + namestr
-            # ftp.retrbinary('RETR {}'.format(target), f.write)
+
             r = BytesIO()
             ftp_target = ftp_subdir_broadcast.value + namestr
             ftp.retrbinary('RETR {}'.format(ftp_target), r.write)
 
             with open(target, 'wb') as f:
-                f.write(gzip.decompress(r.getvalue()))
+                #f.write(gzip.decompress(r.getvalue()))
+                f.write(r.getvalue())
 
             r.close()
             del ftp_target
@@ -68,7 +64,7 @@ def ftp_helper(namestr):
 
     return True
 
-
+Create
 
 # get the list of filenames
 
@@ -90,7 +86,7 @@ ftp_subdir_broadcast = sc.broadcast(ftp_subdir)
 target_brdcst = sc.broadcast(local_data_directory)
 
 
-filenames_rdd = sc.parallelize(filenames_list,20)  # temp: limit for testing
+filenames_rdd = sc.parallelize(filenames_list, 20)  # temp: limit for testing
 print("number of partitions in filenames_rdd: {}".format(filenames_rdd.getNumPartitions()))
 
 print('processing ftp namestrings...')

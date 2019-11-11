@@ -32,7 +32,7 @@ SUBMIT_ARGS = "--driver-class-path file:///home/brendanchambers/my_resources/mys
 os.environ["PYSPARK_SUBMIT_ARGS"] = SUBMIT_ARGS
 
 db_name = 'test_pubmed' 
-table_name = 'abstracts' # 'abstracts'
+table_name = 'abstracts_v2' # 'abstracts'
 # db name collisons? https://stackoverflow.com/questions/14011968/user-cant-access-a-database
 
 url = "jdbc:mysql://localhost:3306/{}?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=America/Chicago".format(db_name)  # mysql runs on port 3306
@@ -76,20 +76,16 @@ try:
     db = mysql.connect(**client_config, database=db_name)
 
     cursor = db.cursor()
-    sql = "CREATE TABLE {} (pmid INT PRIMARY KEY,\
+    sql = "CREATE TABLE {} (pmid INT,\
                             title TEXT,\
-                            abstract TEXT)".format(table_name)
+                            abstract TEXT,\
+                            PRIMARY KEY (pmid))".format(table_name)
     print(sql)
     cursor.execute(sql)
 except Exception as e:
     print('Warning while creating new table:')
     print(e)
-'''
-cursor.execute("CREATE TABLE {} (rowid INT AUTO_INCREMENT PRIMARY KEY,\
-               pmid INT(11),\
-               title TEXT,\
-               abstract TEXT)".format(table_name))
-'''
+
 db.commit()
 print(db)
 
@@ -130,12 +126,12 @@ def parse_helper(namestr):
         title = ''  # init title and abstract in case of missing data
         abstract = ''  # but assume pmid will be present
         
-        # todo year, journal, authors
+        # todo year, journal, authors (update: these are now available in the 'metadata' table)
 
         for child in el.iterchildren():
 
             if child.tag == 'PMID':
-                pmid = child.text
+                pmid = int(child.text)
 
             if child.tag == 'Article':
 
@@ -186,9 +182,9 @@ abstracts_rdd = filenames_rdd.flatMap(parse_helper)
 print('number of partitions in abstracts rdd: {}'.format(abstracts_rdd.getNumPartitions()))
 
 print('converting rdd to dataframe...')
-schema = StructType([StructField('pmid', StringType(), False),  # Nullable?
-                     StructField('title', StringType(), False),
-                     StructField('abstract', StringType(), False)])
+schema = StructType([StructField('pmid', IntegerType(), False),  # Nullable?
+                     StructField('title', StringType(), True),
+                     StructField('abstract', StringType(), True)])
 abstracts_df = spark.createDataFrame(abstracts_rdd, schema)  # potentially cache here
 print('number of partitions in abstracts df: {}'.format(abstracts_df.rdd.getNumPartitions()))
 end_time = time.time()
