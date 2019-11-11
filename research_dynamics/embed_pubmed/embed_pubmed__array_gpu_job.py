@@ -80,7 +80,7 @@ with open(chunk_filename) as f:
             for idx in sorted(del_idxs, reverse=True):
                 del data[idx]
 
-            abstracts = [t[1] + '. ' + t[2] for t in data]  # (pmid, title, abstract)
+            abstracts = [t[1] + ' ' + t[2] for t in data]  # (pmid, title, abstract)
 
             end_time = time.time()
             print('elapsed (s): {}'.format(end_time - start_time))
