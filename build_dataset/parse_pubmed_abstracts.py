@@ -30,7 +30,13 @@ spark_driver_memory = config['spark_driver_memory_string']
 SUBMIT_ARGS = "--driver-class-path file://{} --jars file://{} pyspark-shell".format(path2jar, path2jar)   # build submit_args string
 os.environ["PYSPARK_SUBMIT_ARGS"] = SUBMIT_ARGS
 
-url = "jdbc:mysql://localhost:3306/{}?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=America/Chicago".format(db_name)  # mysql runs on port 3306
+user = client_config['user']
+pwd = client_config['password']
+host = client_config['host']
+url = "jdbc:mysql://{}:{}@{}:3306/{}?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=America/Chicago".format(user,
+                                                                   pwd,
+                                                                   host,
+                                                                   db_name)  # mysql 
 
 ################################################
 
@@ -153,7 +159,7 @@ print('duration: {} s'.format(end_time - start_time))
 print('writing dataframe to disk...')
 start_time = time.time()
 abstracts_df.write.format('jdbc').options(
-                          numPartitions=4,  # reduce num partitions to limit parallel db writes
+                          numPartitions=4,  # limit parallel db writes
                           rewriteBatchedStatements=False,
                           url=url,
                           dbtable=table_name).mode('overwrite').save()  # or, append
