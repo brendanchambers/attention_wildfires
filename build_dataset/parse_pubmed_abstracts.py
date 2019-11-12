@@ -10,7 +10,8 @@ from pyspark.sql.types import Row, StructType, StructField, IntegerType, StringT
 
 import time
 from lxml import etree
-import mysql.connector as mysql
+import pymysql
+#import mysql.connector as mysql
 
 import random
 
@@ -22,18 +23,24 @@ import random
 #                        export PYSPARK_DRIVER_PYTHON=$PYTHON
 #                        module load spark/2.3.2
 
-
 #local_data_directory = '/media/midway/pubmed/gz/'  # vizasaur2 bc local path
-local_data_directory = '/project2/jevans/brendan/pubmed_xml_data/gz/'  # midway path
+#local_data_directory = '/project2/jevans/brendan/pubmed_xml_data/gz/'  # midway path
+local_data_directory = '/home/brendan/FastData/pubmed/gz/'
 
 # mysql
-#SUBMIT_ARGS = "--packages mysql:mysql-connector-java:8.0.16 pyspark-shell"  # this works on my local machine
-SUBMIT_ARGS = "--driver-class-path file:///home/brendanchambers/my_resources/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16.jar --jars file:///home/brendanchambers/my_resources/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16.jar pyspark-shell"
+#SUBMIT_ARGS = "--packages mysql:mysql-connector-java:8.0.16 pyspark-shell"  # vizasaur version
+
+# midway version
+path2jar = '/home/brendanchambers/my_resources/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16.jar'
+# knowledge-garden version (todo)
+path2jar = '/home/brendan/Resources/mysql-connector-java-8.0.18/mysql-connector-java-8.0.18.jar'
+
+SUBMIT_ARGS = "--driver-class-path file://{} --jars file://{} pyspark-shell".format(path2jar, path2jar)
 os.environ["PYSPARK_SUBMIT_ARGS"] = SUBMIT_ARGS
 
-db_name = 'test_pubmed' 
-table_name = 'abstracts_v2' # 'abstracts'
-# db name collisons? https://stackoverflow.com/questions/14011968/user-cant-access-a-database
+db_name = 'test_pubmed'  # https://stackoverflow.com/questions/14011968/user-cant-access-a-database
+table_name = 'abstracts' # 'abstracts'
+N_EXEC = 40  # parallelization width
 
 url = "jdbc:mysql://localhost:3306/{}?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=America/Chicago".format(db_name)  # mysql runs on port 3306
 
@@ -53,7 +60,7 @@ client_config = {'user':'brendanchambers',
 #  more - https://forums.mysql.com/read.php?10,512805,512860#msg-512860
 #   docs - https://dev.mysql.com/doc/refman/5.5/en/connection-access.html
 
-db = mysql.connect(**client_config)  # todo obfuscate'
+db = pymysql.connect(**client_config)  # todo obfuscate'
 
 # init mysql db
 try:
@@ -73,7 +80,7 @@ except Exception as e:
 try:
     print('creating table...')   
 
-    db = mysql.connect(**client_config, database=db_name)
+    db = pymysql.connect(**client_config, database=db_name)
 
     cursor = db.cursor()
     sql = "CREATE TABLE {} (pmid INT,\
@@ -157,21 +164,17 @@ def parse_helper(namestr):
 
         yield Row(pmid, title, abstract)
 
-    #yield Row(random.randint(0,10000000), namestr, namestr)  # dummy return value for testing
-
-    gc.collect()
+    gc.collect()  # note - probably don't need to do this explicitly
+                  # this is leftover from troubleshooting a mem leak
 
 # get the list of filenames
-
 filenames_list = os.listdir(local_data_directory)
-#filenames_list = filenames_list[:25] # temp
 print(filenames_list[:10])
 # temp:
 dir_brdcst = sc.broadcast(local_data_directory)
 
-
 # todo get list of xml filenames using os listdir
-filenames_rdd = sc.parallelize(filenames_list, 4)  # temp: limit for testing
+filenames_rdd = sc.parallelize(filenames_list, N_EXEC)
 print("number of partitions in filenames_rdd: {}".format(filenames_rdd.getNumPartitions()))
 
 print('processing xml files...')
