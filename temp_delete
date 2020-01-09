@@ -1,0 +1,803 @@
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 Nov20 ?        00:02:26 /sbin/init splash
+root          2      0  0 Nov20 ?        00:00:00 [kthreadd]
+root          3      2  0 Nov20 ?        00:00:00 [rcu_gp]
+root          4      2  0 Nov20 ?        00:00:00 [rcu_par_gp]
+root          6      2  0 Nov20 ?        00:00:00 [kworker/0:0H-kblockd]
+root         10      2  0 Nov20 ?        00:00:00 [mm_percpu_wq]
+root         11      2  0 Nov20 ?        00:00:56 [ksoftirqd/0]
+root         12      2  0 Nov20 ?        00:31:44 [rcu_sched]
+root         13      2  0 Nov20 ?        00:00:03 [migration/0]
+root         14      2  0 Nov20 ?        00:00:00 [idle_inject/0]
+root         15      2  0 Nov20 ?        00:00:00 [cpuhp/0]
+root         16      2  0 Nov20 ?        00:00:00 [cpuhp/1]
+root         17      2  0 Nov20 ?        00:00:00 [idle_inject/1]
+root         18      2  0 Nov20 ?        00:00:03 [migration/1]
+root         19      2  0 Nov20 ?        00:01:01 [ksoftirqd/1]
+root         21      2  0 Nov20 ?        00:00:00 [kworker/1:0H-kblockd]
+root         22      2  0 Nov20 ?        00:00:00 [cpuhp/2]
+root         23      2  0 Nov20 ?        00:00:00 [idle_inject/2]
+root         24      2  0 Nov20 ?        00:00:03 [migration/2]
+root         25      2  0 Nov20 ?        00:01:07 [ksoftirqd/2]
+root         27      2  0 Nov20 ?        00:00:00 [kworker/2:0H-kblockd]
+root         28      2  0 Nov20 ?        00:00:00 [cpuhp/3]
+root         29      2  0 Nov20 ?        00:00:00 [idle_inject/3]
+root         30      2  0 Nov20 ?        00:00:03 [migration/3]
+root         31      2  0 Nov20 ?        00:00:44 [ksoftirqd/3]
+root         33      2  0 Nov20 ?        00:00:00 [kworker/3:0H-kblockd]
+root         34      2  0 Nov20 ?        00:00:00 [cpuhp/4]
+root         35      2  0 Nov20 ?        00:00:00 [idle_inject/4]
+root         36      2  0 Nov20 ?        00:00:03 [migration/4]
+root         37      2  0 Nov20 ?        00:00:43 [ksoftirqd/4]
+root         39      2  0 Nov20 ?        00:00:00 [kworker/4:0H-kblockd]
+root         40      2  0 Nov20 ?        00:00:00 [cpuhp/5]
+root         41      2  0 Nov20 ?        00:00:00 [idle_inject/5]
+root         42      2  0 Nov20 ?        00:00:03 [migration/5]
+root         43      2  0 Nov20 ?        00:00:45 [ksoftirqd/5]
+root         45      2  0 Nov20 ?        00:00:00 [kworker/5:0H-kblockd]
+root         46      2  0 Nov20 ?        00:00:00 [cpuhp/6]
+root         47      2  0 Nov20 ?        00:00:00 [idle_inject/6]
+root         48      2  0 Nov20 ?        00:00:03 [migration/6]
+root         49      2  0 Nov20 ?        00:00:24 [ksoftirqd/6]
+root         51      2  0 Nov20 ?        00:00:00 [kworker/6:0H-events_highpri]
+root         53      2  0 Nov20 ?        00:00:00 [cpuhp/7]
+root         54      2  0 Nov20 ?        00:00:00 [idle_inject/7]
+root         55      2  0 Nov20 ?        00:00:03 [migration/7]
+root         56      2  0 Nov20 ?        00:00:19 [ksoftirqd/7]
+root         58      2  0 Nov20 ?        00:00:00 [kworker/7:0H-kblockd]
+root         59      2  0 Nov20 ?        00:00:00 [cpuhp/8]
+root         60      2  0 Nov20 ?        00:00:00 [idle_inject/8]
+root         61      2  0 Nov20 ?        00:00:03 [migration/8]
+root         62      2  0 Nov20 ?        00:00:13 [ksoftirqd/8]
+root         64      2  0 Nov20 ?        00:00:00 [kworker/8:0H-kblockd]
+root         65      2  0 Nov20 ?        00:00:00 [cpuhp/9]
+root         66      2  0 Nov20 ?        00:00:00 [idle_inject/9]
+root         67      2  0 Nov20 ?        00:00:04 [migration/9]
+root         68      2  0 Nov20 ?        00:00:30 [ksoftirqd/9]
+root         70      2  0 Nov20 ?        00:00:00 [kworker/9:0H-kblockd]
+root         71      2  0 Nov20 ?        00:00:00 [cpuhp/10]
+root         72      2  0 Nov20 ?        00:00:00 [idle_inject/10]
+root         73      2  0 Nov20 ?        00:00:03 [migration/10]
+root         74      2  0 Nov20 ?        00:00:22 [ksoftirqd/10]
+root         76      2  0 Nov20 ?        00:00:00 [kworker/10:0H-kblockd]
+root         77      2  0 Nov20 ?        00:00:00 [cpuhp/11]
+root         78      2  0 Nov20 ?        00:00:00 [idle_inject/11]
+root         79      2  0 Nov20 ?        00:00:03 [migration/11]
+root         80      2  0 Nov20 ?        00:00:18 [ksoftirqd/11]
+root         82      2  0 Nov20 ?        00:00:00 [kworker/11:0H-kblockd]
+root         83      2  0 Nov20 ?        00:00:00 [cpuhp/12]
+root         84      2  0 Nov20 ?        00:00:00 [idle_inject/12]
+root         85      2  0 Nov20 ?        00:00:03 [migration/12]
+root         86      2  0 Nov20 ?        00:00:01 [ksoftirqd/12]
+root         88      2  0 Nov20 ?        00:00:00 [kworker/12:0H-kblockd]
+root         90      2  0 Nov20 ?        00:00:00 [cpuhp/13]
+root         91      2  0 Nov20 ?        00:00:00 [idle_inject/13]
+root         92      2  0 Nov20 ?        00:00:02 [migration/13]
+root         93      2  0 Nov20 ?        00:00:00 [ksoftirqd/13]
+root         95      2  0 Nov20 ?        00:00:00 [kworker/13:0H-kblockd]
+root         96      2  0 Nov20 ?        00:00:00 [cpuhp/14]
+root         97      2  0 Nov20 ?        00:00:00 [idle_inject/14]
+root         98      2  0 Nov20 ?        00:00:02 [migration/14]
+root         99      2  0 Nov20 ?        00:00:00 [ksoftirqd/14]
+root        101      2  0 Nov20 ?        00:00:00 [kworker/14:0H-kblockd]
+root        102      2  0 Nov20 ?        00:00:00 [cpuhp/15]
+root        103      2  0 Nov20 ?        00:00:00 [idle_inject/15]
+root        104      2  0 Nov20 ?        00:00:03 [migration/15]
+root        105      2  0 Nov20 ?        00:00:00 [ksoftirqd/15]
+root        107      2  0 Nov20 ?        00:00:00 [kworker/15:0H-kblockd]
+root        108      2  0 Nov20 ?        00:00:00 [cpuhp/16]
+root        109      2  0 Nov20 ?        00:00:00 [idle_inject/16]
+root        110      2  0 Nov20 ?        00:00:02 [migration/16]
+root        111      2  0 Nov20 ?        00:00:00 [ksoftirqd/16]
+root        113      2  0 Nov20 ?        00:00:00 [kworker/16:0H-kblockd]
+root        114      2  0 Nov20 ?        00:00:00 [cpuhp/17]
+root        115      2  0 Nov20 ?        00:00:00 [idle_inject/17]
+root        116      2  0 Nov20 ?        00:00:02 [migration/17]
+root        117      2  0 Nov20 ?        00:00:00 [ksoftirqd/17]
+root        119      2  0 Nov20 ?        00:00:00 [kworker/17:0H-kblockd]
+root        120      2  0 Nov20 ?        00:00:00 [cpuhp/18]
+root        121      2  0 Nov20 ?        00:00:00 [idle_inject/18]
+root        122      2  0 Nov20 ?        00:00:03 [migration/18]
+root        123      2  0 Nov20 ?        00:00:01 [ksoftirqd/18]
+root        125      2  0 Nov20 ?        00:00:00 [kworker/18:0H-kblockd]
+root        128      2  0 Nov20 ?        00:00:00 [cpuhp/19]
+root        129      2  0 Nov20 ?        00:00:00 [idle_inject/19]
+root        130      2  0 Nov20 ?        00:00:02 [migration/19]
+root        131      2  0 Nov20 ?        00:00:00 [ksoftirqd/19]
+root        133      2  0 Nov20 ?        00:00:00 [kworker/19:0H-kblockd]
+root        134      2  0 Nov20 ?        00:00:00 [cpuhp/20]
+root        135      2  0 Nov20 ?        00:00:00 [idle_inject/20]
+root        136      2  0 Nov20 ?        00:00:02 [migration/20]
+root        137      2  0 Nov20 ?        00:00:00 [ksoftirqd/20]
+root        139      2  0 Nov20 ?        00:00:00 [kworker/20:0H-kblockd]
+root        140      2  0 Nov20 ?        00:00:00 [cpuhp/21]
+root        141      2  0 Nov20 ?        00:00:00 [idle_inject/21]
+root        142      2  0 Nov20 ?        00:00:02 [migration/21]
+root        143      2  0 Nov20 ?        00:00:00 [ksoftirqd/21]
+root        145      2  0 Nov20 ?        00:00:00 [kworker/21:0H-kblockd]
+root        146      2  0 Nov20 ?        00:00:00 [cpuhp/22]
+root        147      2  0 Nov20 ?        00:00:00 [idle_inject/22]
+root        148      2  0 Nov20 ?        00:00:02 [migration/22]
+root        149      2  0 Nov20 ?        00:00:00 [ksoftirqd/22]
+root        151      2  0 Nov20 ?        00:00:00 [kworker/22:0H-kblockd]
+root        152      2  0 Nov20 ?        00:00:00 [cpuhp/23]
+root        153      2  0 Nov20 ?        00:00:00 [idle_inject/23]
+root        154      2  0 Nov20 ?        00:00:02 [migration/23]
+root        155      2  0 Nov20 ?        00:00:00 [ksoftirqd/23]
+root        157      2  0 Nov20 ?        00:00:00 [kworker/23:0H-kblockd]
+root        158      2  0 Nov20 ?        00:00:00 [cpuhp/24]
+root        159      2  0 Nov20 ?        00:00:00 [idle_inject/24]
+root        160      2  0 Nov20 ?        00:00:03 [migration/24]
+root        161      2  0 Nov20 ?        00:00:30 [ksoftirqd/24]
+root        163      2  0 Nov20 ?        00:00:00 [kworker/24:0H-kblockd]
+root        164      2  0 Nov20 ?        00:00:00 [cpuhp/25]
+root        165      2  0 Nov20 ?        00:00:00 [idle_inject/25]
+root        166      2  0 Nov20 ?        00:00:03 [migration/25]
+root        167      2  0 Nov20 ?        00:00:16 [ksoftirqd/25]
+root        169      2  0 Nov20 ?        00:00:00 [kworker/25:0H-events_highpri]
+root        170      2  0 Nov20 ?        00:00:00 [cpuhp/26]
+root        171      2  0 Nov20 ?        00:00:00 [idle_inject/26]
+root        172      2  0 Nov20 ?        00:00:03 [migration/26]
+root        173      2  0 Nov20 ?        00:00:12 [ksoftirqd/26]
+root        175      2  0 Nov20 ?        00:00:00 [kworker/26:0H-kblockd]
+root        176      2  0 Nov20 ?        00:00:00 [cpuhp/27]
+root        177      2  0 Nov20 ?        00:00:00 [idle_inject/27]
+root        178      2  0 Nov20 ?        00:00:03 [migration/27]
+root        179      2  0 Nov20 ?        00:00:25 [ksoftirqd/27]
+root        181      2  0 Nov20 ?        00:00:00 [kworker/27:0H-kblockd]
+root        182      2  0 Nov20 ?        00:00:00 [cpuhp/28]
+root        183      2  0 Nov20 ?        00:00:00 [idle_inject/28]
+root        184      2  0 Nov20 ?        00:00:03 [migration/28]
+root        185      2  0 Nov20 ?        00:00:22 [ksoftirqd/28]
+root        187      2  0 Nov20 ?        00:00:00 [kworker/28:0H-kblockd]
+root        188      2  0 Nov20 ?        00:00:00 [cpuhp/29]
+root        189      2  0 Nov20 ?        00:00:00 [idle_inject/29]
+root        190      2  0 Nov20 ?        00:00:03 [migration/29]
+root        191      2  0 Nov20 ?        00:00:22 [ksoftirqd/29]
+root        193      2  0 Nov20 ?        00:00:00 [kworker/29:0H-kblockd]
+root        194      2  0 Nov20 ?        00:00:00 [cpuhp/30]
+root        195      2  0 Nov20 ?        00:00:00 [idle_inject/30]
+root        196      2  0 Nov20 ?        00:00:04 [migration/30]
+root        197      2  0 Nov20 ?        00:00:07 [ksoftirqd/30]
+root        199      2  0 Nov20 ?        00:00:00 [kworker/30:0H-kblockd]
+root        200      2  0 Nov20 ?        00:00:00 [cpuhp/31]
+root        201      2  0 Nov20 ?        00:00:00 [idle_inject/31]
+root        202      2  0 Nov20 ?        00:00:03 [migration/31]
+root        203      2  0 Nov20 ?        00:00:05 [ksoftirqd/31]
+root        205      2  0 Nov20 ?        00:00:00 [kworker/31:0H-kblockd]
+root        206      2  0 Nov20 ?        00:00:00 [cpuhp/32]
+root        207      2  0 Nov20 ?        00:00:00 [idle_inject/32]
+root        208      2  0 Nov20 ?        00:00:03 [migration/32]
+root        209      2  0 Nov20 ?        00:00:05 [ksoftirqd/32]
+root        211      2  0 Nov20 ?        00:00:00 [kworker/32:0H-events_highpri]
+root        212      2  0 Nov20 ?        00:00:00 [cpuhp/33]
+root        213      2  0 Nov20 ?        00:00:00 [idle_inject/33]
+root        214      2  0 Nov20 ?        00:00:03 [migration/33]
+root        215      2  0 Nov20 ?        00:00:10 [ksoftirqd/33]
+root        217      2  0 Nov20 ?        00:00:00 [kworker/33:0H-kblockd]
+root        218      2  0 Nov20 ?        00:00:00 [cpuhp/34]
+root        219      2  0 Nov20 ?        00:00:00 [idle_inject/34]
+root        220      2  0 Nov20 ?        00:00:03 [migration/34]
+root        221      2  0 Nov20 ?        00:00:08 [ksoftirqd/34]
+root        223      2  0 Nov20 ?        00:00:00 [kworker/34:0H-kblockd]
+root        224      2  0 Nov20 ?        00:00:00 [cpuhp/35]
+root        225      2  0 Nov20 ?        00:00:00 [idle_inject/35]
+root        226      2  0 Nov20 ?        00:00:03 [migration/35]
+root        227      2  0 Nov20 ?        00:00:11 [ksoftirqd/35]
+root        229      2  0 Nov20 ?        00:00:00 [kworker/35:0H-kblockd]
+root        230      2  0 Nov20 ?        00:00:00 [cpuhp/36]
+root        231      2  0 Nov20 ?        00:00:00 [idle_inject/36]
+root        232      2  0 Nov20 ?        00:00:02 [migration/36]
+root        233      2  0 Nov20 ?        00:00:00 [ksoftirqd/36]
+root        235      2  0 Nov20 ?        00:00:00 [kworker/36:0H-kblockd]
+root        236      2  0 Nov20 ?        00:00:00 [cpuhp/37]
+root        237      2  0 Nov20 ?        00:00:00 [idle_inject/37]
+root        238      2  0 Nov20 ?        00:00:02 [migration/37]
+root        239      2  0 Nov20 ?        00:00:00 [ksoftirqd/37]
+root        241      2  0 Nov20 ?        00:00:00 [kworker/37:0H-kblockd]
+root        242      2  0 Nov20 ?        00:00:00 [cpuhp/38]
+root        243      2  0 Nov20 ?        00:00:00 [idle_inject/38]
+root        244      2  0 Nov20 ?        00:00:02 [migration/38]
+root        245      2  0 Nov20 ?        00:00:00 [ksoftirqd/38]
+root        247      2  0 Nov20 ?        00:00:00 [kworker/38:0H-kblockd]
+root        248      2  0 Nov20 ?        00:00:00 [cpuhp/39]
+root        249      2  0 Nov20 ?        00:00:00 [idle_inject/39]
+root        250      2  0 Nov20 ?        00:00:02 [migration/39]
+root        251      2  0 Nov20 ?        00:00:00 [ksoftirqd/39]
+root        253      2  0 Nov20 ?        00:00:00 [kworker/39:0H-kblockd]
+root        254      2  0 Nov20 ?        00:00:00 [cpuhp/40]
+root        255      2  0 Nov20 ?        00:00:00 [idle_inject/40]
+root        256      2  0 Nov20 ?        00:00:02 [migration/40]
+root        257      2  0 Nov20 ?        00:00:00 [ksoftirqd/40]
+root        259      2  0 Nov20 ?        00:00:00 [kworker/40:0H-kblockd]
+root        260      2  0 Nov20 ?        00:00:00 [cpuhp/41]
+root        261      2  0 Nov20 ?        00:00:00 [idle_inject/41]
+root        262      2  0 Nov20 ?        00:00:02 [migration/41]
+root        263      2  0 Nov20 ?        00:00:02 [ksoftirqd/41]
+root        265      2  0 Nov20 ?        00:00:00 [kworker/41:0H-events_highpri]
+root        266      2  0 Nov20 ?        00:00:00 [cpuhp/42]
+root        267      2  0 Nov20 ?        00:00:00 [idle_inject/42]
+root        268      2  0 Nov20 ?        00:00:02 [migration/42]
+root        269      2  0 Nov20 ?        00:00:00 [ksoftirqd/42]
+root        271      2  0 Nov20 ?        00:00:00 [kworker/42:0H-kblockd]
+root        272      2  0 Nov20 ?        00:00:00 [cpuhp/43]
+root        273      2  0 Nov20 ?        00:00:00 [idle_inject/43]
+root        274      2  0 Nov20 ?        00:00:02 [migration/43]
+root        275      2  0 Nov20 ?        00:00:00 [ksoftirqd/43]
+root        277      2  0 Nov20 ?        00:00:00 [kworker/43:0H-kblockd]
+root        278      2  0 Nov20 ?        00:00:00 [cpuhp/44]
+root        279      2  0 Nov20 ?        00:00:00 [idle_inject/44]
+root        280      2  0 Nov20 ?        00:00:02 [migration/44]
+root        281      2  0 Nov20 ?        00:00:00 [ksoftirqd/44]
+root        283      2  0 Nov20 ?        00:00:00 [kworker/44:0H-kblockd]
+root        284      2  0 Nov20 ?        00:00:00 [cpuhp/45]
+root        285      2  0 Nov20 ?        00:00:00 [idle_inject/45]
+root        286      2  0 Nov20 ?        00:00:02 [migration/45]
+root        287      2  0 Nov20 ?        00:00:00 [ksoftirqd/45]
+root        289      2  0 Nov20 ?        00:00:00 [kworker/45:0H-kblockd]
+root        290      2  0 Nov20 ?        00:00:00 [cpuhp/46]
+root        291      2  0 Nov20 ?        00:00:00 [idle_inject/46]
+root        292      2  0 Nov20 ?        00:00:02 [migration/46]
+root        293      2  0 Nov20 ?        00:00:00 [ksoftirqd/46]
+root        295      2  0 Nov20 ?        00:00:00 [kworker/46:0H-kblockd]
+root        296      2  0 Nov20 ?        00:00:00 [cpuhp/47]
+root        297      2  0 Nov20 ?        00:00:00 [idle_inject/47]
+root        298      2  0 Nov20 ?        00:00:02 [migration/47]
+root        299      2  0 Nov20 ?        00:00:02 [ksoftirqd/47]
+root        301      2  0 Nov20 ?        00:00:00 [kworker/47:0H-kblockd]
+root        302      2  0 Nov20 ?        00:00:00 [kdevtmpfs]
+root        303      2  0 Nov20 ?        00:00:00 [netns]
+root        304      2  0 Nov20 ?        00:00:00 [rcu_tasks_kthre]
+root        305      2  0 Nov20 ?        02:35:39 [kauditd]
+root        310      2  0 Nov20 ?        00:00:04 [khungtaskd]
+root        311      2  0 Nov20 ?        00:00:04 [oom_reaper]
+root        312      2  0 Nov20 ?        00:00:00 [writeback]
+root        313      2  0 Nov20 ?        00:00:03 [kcompactd0]
+root        314      2  0 Nov20 ?        00:00:07 [kcompactd2]
+root        315      2  0 Nov20 ?        00:00:00 [ksmd]
+root        316      2  0 Nov20 ?        00:00:15 [khugepaged]
+brendan     321 130999  0 11:01 pts/11   00:00:22 /home/brendan/anaconda3/envs/embedding-base/bin/python /home/brendan/anaconda3/envs/embedding-base/bin/jupyter-notebook --no-browser --ip=128.135.250.219
+root        410      2  0 Nov20 ?        00:00:00 [kintegrityd]
+root        411      2  0 Nov20 ?        00:00:00 [kblockd]
+root        412      2  0 Nov20 ?        00:00:00 [blkcg_punt_bio]
+root        414      2  0 Nov20 ?        00:00:00 [tpm_dev_wq]
+root        415      2  0 Nov20 ?        00:00:00 [ata_sff]
+root        417      2  0 Nov20 ?        00:00:00 [md]
+root        418      2  0 Nov20 ?        00:00:00 [edac-poller]
+root        419      2  0 Nov20 ?        00:00:00 [devfreq_wq]
+root        420      2  0 Nov20 ?        00:00:00 [watchdogd]
+root        422      2  0 Nov20 ?        00:00:00 [irq/26-AMD-Vi]
+root        423      2  0 Nov20 ?        00:00:00 [irq/27-AMD-Vi]
+root        424      2  0 Nov20 ?        00:00:00 [irq/28-AMD-Vi]
+root        425      2  0 Nov20 ?        00:00:00 [irq/29-AMD-Vi]
+root        428      2  0 Nov20 ?        00:09:04 [kswapd0]
+root        429      2  0 Nov20 ?        00:07:59 [kswapd2]
+root        430      2  0 Nov20 ?        00:00:00 [kworker/u261:0-hci0]
+root        431      2  0 Nov20 ?        00:00:00 [kworker/u262:0]
+root        432      2  0 Nov20 ?        00:00:00 [kworker/u263:0]
+root        433      2  0 Nov20 ?        00:00:00 [kworker/u264:0]
+root        434      2  0 Nov20 ?        00:00:00 [kworker/u265:0]
+root        435      2  0 Nov20 ?        00:00:00 [ecryptfs-kthrea]
+root        438      2  0 Nov20 ?        00:00:00 [kthrotld]
+root        439      2  0 Nov20 ?        00:00:00 [irq/30-aerdrv]
+root        440      2  0 Nov20 ?        00:00:00 [irq/30-pcie-dpc]
+root        441      2  0 Nov20 ?        00:00:00 [irq/31-aerdrv]
+root        442      2  0 Nov20 ?        00:00:00 [irq/31-pcie-dpc]
+root        443      2  0 Nov20 ?        00:00:00 [irq/32-aerdrv]
+root        444      2  0 Nov20 ?        00:00:00 [irq/34-aerdrv]
+root        446      2  0 Nov20 ?        00:00:00 [irq/46-aerdrv]
+root        447      2  0 Nov20 ?        00:00:00 [irq/48-aerdrv]
+root        449      2  0 Nov20 ?        00:00:00 [irq/49-aerdrv]
+root        450      2  0 Nov20 ?        00:00:00 [irq/49-pcie-dpc]
+root        451      2  0 Nov20 ?        00:00:00 [irq/50-aerdrv]
+root        452      2  0 Nov20 ?        00:00:00 [irq/52-aerdrv]
+root        453      2  0 Nov20 ?        00:00:00 [irq/54-aerdrv]
+root        454      2  0 Nov20 ?        00:00:00 [irq/56-aerdrv]
+root        494      2  0 Nov20 ?        00:00:00 [acpi_thermal_pm]
+root        497      2  0 Nov20 ?        00:00:00 [ipv6_addrconf]
+root        508      2  0 Nov20 ?        00:00:00 [kstrp]
+root        527      2  0 Nov20 ?        00:00:00 [charger_manager]
+root        592      2  0 Nov20 ?        00:00:00 [nvme-wq]
+root        593      2  0 Nov20 ?        00:00:00 [nvme-reset-wq]
+root        594      2  0 Nov20 ?        00:00:00 [nvme-delete-wq]
+root        601      2  0 Nov20 ?        00:00:00 [scsi_eh_0]
+root        603      2  0 Nov20 ?        00:00:00 [scsi_tmf_0]
+root        608      2  0 Nov20 ?        00:00:00 [scsi_eh_1]
+root        609      2  0 Nov20 ?        00:00:00 [scsi_tmf_1]
+root        610      2  0 Nov20 ?        00:00:00 [scsi_eh_2]
+root        611      2  0 Nov20 ?        00:00:00 [scsi_tmf_2]
+root        615      2  0 Nov20 ?        00:00:00 [scsi_eh_3]
+root        616      2  0 Nov20 ?        00:00:00 [scsi_tmf_3]
+root        618      2  0 Nov20 ?        00:00:00 [scsi_eh_4]
+root        619      2  0 Nov20 ?        00:00:00 [scsi_tmf_4]
+root        620      2  0 Nov20 ?        00:00:00 [scsi_eh_5]
+root        621      2  0 Nov20 ?        00:00:00 [scsi_tmf_5]
+root        622      2  0 Nov20 ?        00:00:00 [scsi_eh_6]
+root        624      2  0 Nov20 ?        00:00:00 [scsi_tmf_6]
+root        625      2  0 Nov20 ?        00:00:00 [scsi_eh_7]
+root        626      2  0 Nov20 ?        00:00:00 [scsi_tmf_7]
+root        634      2  0 Nov20 ?        00:00:00 [scsi_eh_8]
+root        636      2  0 Nov20 ?        00:00:00 [scsi_tmf_8]
+root        639      2  0 Nov20 ?        00:00:00 [scsi_eh_9]
+root        640      2  0 Nov20 ?        00:00:00 [scsi_tmf_9]
+root        667      2  0 Nov20 ?        00:00:23 [kworker/26:1H-kblockd]
+root        669      2  0 Nov20 ?        00:52:35 [jbd2/nvme0n1p2-]
+root        670      2  0 Nov20 ?        00:00:00 [ext4-rsv-conver]
+root        723      1  2 Nov20 ?        12:46:42 /lib/systemd/systemd-journald
+root        727      2  0 Nov20 ?        00:00:03 [kworker/15:1H-kblockd]
+root        732      2  0 Nov20 ?        00:00:00 bpfilter_umh
+root        740      2  0 Nov20 ?        00:00:10 [kworker/2:1H-kblockd]
+root        746      1  0 Nov20 ?        00:00:18 /lib/systemd/systemd-udevd
+root        764      2  0 Nov20 ?        00:00:00 [loop0]
+root       1007      2  0 Nov20 ?        00:00:00 [loop1]
+root       1107      2  0 Nov20 ?        00:00:54 [kworker/5:1H-kblockd]
+root       1108      2  0 Nov20 ?        00:00:00 [loop2]
+root       1109      2  0 Nov20 ?        00:01:41 [kworker/27:1H-kblockd]
+root       1110      2  0 Nov20 ?        00:00:00 [loop3]
+root       1111      2  0 Nov20 ?        00:00:00 [loop4]
+root       1112      2  0 Nov20 ?        00:00:20 [kworker/33:1H-kblockd]
+root       1113      2  0 Nov20 ?        00:00:08 [loop5]
+root       1114      2  0 Nov20 ?        00:00:04 [kworker/13:1H-kblockd]
+root       1115      2  0 Nov20 ?        00:00:03 [kworker/14:1H-kblockd]
+root       1116      2  0 Nov20 ?        00:00:00 [loop6]
+root       1117      2  0 Nov20 ?        00:00:12 [kworker/34:1H-kblockd]
+root       1118      2  0 Nov20 ?        00:00:08 [kworker/18:1H-kblockd]
+root       1119      2  0 Nov20 ?        00:00:00 [loop7]
+root       1120      2  0 Nov20 ?        00:00:00 [ccp-1-q2]
+root       1121      2  0 Nov20 ?        00:00:00 [ccp-1-q3]
+root       1122      2  0 Nov20 ?        00:00:00 [ccp-1-q4]
+root       1123      2  0 Nov20 ?        00:00:00 [ccp-2-q2]
+root       1124      2  0 Nov20 ?        00:00:00 [ccp-2-q3]
+root       1125      2  0 Nov20 ?        00:00:00 [ccp-2-q4]
+root       1126      2  0 Nov20 ?        00:00:00 [ccp-3-q2]
+root       1127      2  0 Nov20 ?        00:00:00 [ccp-3-q3]
+root       1128      2  0 Nov20 ?        00:00:00 [ccp-3-q4]
+root       1131      2  0 Nov20 ?        00:00:00 [ccp-4-q2]
+root       1132      2  0 Nov20 ?        00:00:00 [ccp-4-q3]
+root       1133      2  0 Nov20 ?        00:00:00 [ccp-4-q4]
+root       1155      2  0 Nov20 ?        00:00:00 [cfg80211]
+root       1166      2  0 Nov20 ?        00:00:46 [irq/148-iwlwifi]
+root       1171      2  0 Nov20 ?        00:00:10 [kworker/9:1H-kblockd]
+root       1172      2  0 Nov20 ?        00:00:07 [kworker/21:1H-kblockd]
+root       1173      2  0 Nov20 ?        00:00:16 [kworker/31:1H-kblockd]
+root       1174      2  0 Nov20 ?        00:00:06 [kworker/46:1H-kblockd]
+root       1175      2  0 Nov20 ?        00:00:11 [kworker/10:1H-kblockd]
+root       1176      2  0 11:32 ?        00:00:08 [kworker/5:1-events]
+root       1177      2  0 Nov20 ?        00:00:00 [loop8]
+root       1178      2  0 Nov20 ?        00:00:08 [kworker/39:1H-kblockd]
+root       1185      2  0 Nov20 ?        00:00:10 [kworker/1:1H-kblockd]
+root       1198      2  0 Nov20 ?        00:00:16 [kworker/42:1H-kblockd]
+root       1199      2  0 Nov20 ?        00:00:04 [kworker/20:1H-kblockd]
+root       1200      2  0 Nov20 ?        00:00:12 [kworker/0:1H-kblockd]
+root       1201      2  0 Nov20 ?        00:00:46 [kworker/3:1H-kblockd]
+root       1202      2  0 Nov20 ?        00:00:18 [kworker/45:1H-kblockd]
+root       1203      2  0 Nov20 ?        00:00:00 [irq/89-5-0008]
+root       1204      2  0 Nov20 ?        00:00:05 [kworker/19:1H-kblockd]
+root       1205      2  0 Nov20 ?        00:00:59 [kworker/28:1H-kblockd]
+root       1206      2  0 Nov20 ?        00:00:14 [kworker/36:1H-kblockd]
+root       1207      2  0 Nov20 ?        00:00:10 [kworker/37:1H-kblockd]
+root       1208      2  0 Nov20 ?        00:00:02 [kworker/16:1H-kblockd]
+root       1209      2  0 Nov20 ?        00:00:08 [kworker/38:1H-kblockd]
+root       1210      2  0 Nov20 ?        00:00:07 [kworker/12:1H-kblockd]
+root       1211      2  0 Nov20 ?        00:00:08 [kworker/7:1H-kblockd]
+root       1218      2  0 Nov20 ?        00:00:00 [cryptd]
+root       1219      2  0 Nov20 ?        00:00:06 [kworker/22:1H-kblockd]
+root       1225      2  0 Nov20 ?        00:00:06 [kworker/23:1H-kblockd]
+root       1230      2  0 Nov20 ?        00:00:05 [kworker/u261:2-rb_allocator]
+root       1255      2  0 Nov20 ?        00:00:05 [kworker/47:1H-kblockd]
+root       1298      2  0 Nov20 ?        00:00:11 [kworker/11:1H-kblockd]
+root       1299      2  0 Nov20 ?        00:00:02 [kworker/40:1H-kblockd]
+root       1301      2  0 Nov20 ?        00:00:16 [kworker/30:1H-kblockd]
+root       1304      2  0 Nov20 ?        00:00:12 [kworker/35:1H-kblockd]
+root       1313      2  0 Nov20 ?        00:00:11 [kworker/44:1H-kblockd]
+root       1331      2  0 Nov20 ?        00:00:00 [nv_queue]
+root       1332      2  0 Nov20 ?        00:00:00 [nv_queue]
+root       1336      2  0 Nov20 ?        00:00:00 [loop11]
+root       1338      2  0 Nov20 ?        00:00:08 [kworker/8:1H-kblockd]
+root       1339      2  0 Nov20 ?        00:00:22 [kworker/24:1H-kblockd]
+root       1340      2  0 Nov20 ?        00:00:00 [nvidia-modeset/]
+root       1341      2  0 Nov20 ?        00:00:00 [nvidia-modeset/]
+root       1392      2  0 Nov20 ?        00:00:00 [UVM global queu]
+root       1393      2  0 Nov20 ?        00:00:00 [UVM deferred re]
+root       1394      2  0 Nov20 ?        00:00:00 [UVM Tools Event]
+systemd+   1458      1  0 Nov20 ?        00:02:07 /lib/systemd/systemd-resolved
+systemd+   1460      1  0 Nov20 ?        00:00:02 /lib/systemd/systemd-timesyncd
+root       1476      1  0 Nov20 ?        00:00:10 /lib/systemd/systemd-logind
+root       1484      1  0 Nov20 ?        00:00:00 /usr/sbin/ModemManager --filter-policy=strict
+root       1486      1  0 Nov20 ?        00:00:00 /usr/lib/bluetooth/bluetoothd
+message+   1487      1  0 Nov20 ?        00:12:31 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       1488      1  0 Nov20 ?        00:09:32 /usr/sbin/NetworkManager --no-daemon
+root       1490      1  0 Nov20 ?        00:00:11 /usr/sbin/acpid
+syslog     1493      1  0 Nov20 ?        00:01:50 /usr/sbin/rsyslogd -n -iNONE
+root       1496      1  0 Nov20 ?        00:00:01 /usr/sbin/cron -f
+avahi      1497      1  0 Nov20 ?        00:01:04 avahi-daemon: running [knowledge-garden.local]
+root       1507      1  0 Nov20 ?        00:08:10 /usr/sbin/irqbalance --foreground
+root       1511      1  0 Nov20 ?        00:00:01 /usr/lib/udisks2/udisksd
+root       1526      1  0 Nov20 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root       1544      1  0 Nov20 ?        00:08:13 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root       1551      1  0 Nov20 ?        00:00:58 /usr/lib/accountsservice/accounts-daemon
+avahi      1591   1497  0 Nov20 ?        00:00:00 avahi-daemon: chroot helper
+root       1604      1  0 Nov20 ?        00:01:13 /usr/lib/policykit-1/polkitd --no-debug
+nvidia-+   1606      1  0 Nov20 ?        00:00:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+root       1620      1  0 Nov20 ?        00:00:42 /usr/sbin/sshd -D
+root       1624      2  0 Nov20 ?        00:00:54 [kworker/29:1H-kblockd]
+root       1633      2  0 Nov20 ?        00:00:51 [kworker/4:1H-kblockd]
+root       1640      1  0 Nov20 ?        00:00:00 /usr/sbin/gdm3
+root       1642      2  0 Nov20 ?        00:00:02 [kworker/17:1H-kblockd]
+root       1649      2  0 Nov20 ?        00:00:12 [kworker/43:1H-kblockd]
+root       1702      1  0 Nov20 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root       1703   1640  0 Nov20 ?        00:00:00 gdm-session-worker [pam/gdm-launch-environment]
+gdm        1738      1  0 Nov20 ?        00:00:00 /lib/systemd/systemd --user
+gdm        1739   1738  0 Nov20 ?        00:00:00 (sd-pam)
+gdm        1751   1738  0 Nov20 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no
+gdm        1752   1703  0 Nov20 tty1     00:00:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gdm/greeter/autostart
+root       1754   1752  0 Nov20 tty1     00:00:34 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/124/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+rtkit      1775      1  0 Nov20 ?        00:00:18 /usr/libexec/rtkit-daemon
+gdm        1778   1738  0 Nov20 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       1780      2  0 Nov20 ?        00:24:31 [irq/153-nvidia]
+root       1781      2  0 Nov20 ?        00:00:00 [nvidia]
+root       1782      2  0 Nov20 ?        00:03:07 [nv_queue]
+gdm        1794   1752  0 Nov20 tty1     00:00:00 /usr/lib/gnome-session/gnome-session-binary --systemd --autostart /usr/share/gdm/greeter/autostart
+gdm        1796   1738  0 Nov20 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+gdm        1799   1738  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfsd
+gdm        1804   1738  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/124/gvfs -f -o big_writes
+gdm        1808   1796  0 Nov20 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+gdm        1819   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-session/gnome-session-ctl --monitor
+gdm        1828   1738  0 Nov20 ?        00:00:00 /usr/bin/gnome-keyring-daemon --start --components ssh
+gdm        1835   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-session/gnome-session-binary --systemd-service --session=gnome-login
+gdm        1842   1738  0 Nov20 ?        00:10:14 /usr/bin/gnome-shell
+gdm        1874   1738  0 Nov20 ?        00:00:00 /usr/libexec/xdg-permission-store
+root       1880      1  0 Nov20 ?        00:00:01 /usr/lib/upower/upowerd
+geoclue    1883      1  0 Nov20 ?        00:11:34 /usr/lib/geoclue-2.0/geoclue
+gdm        1892   1842  0 Nov20 ?        00:00:00 ibus-daemon --panel disable -r --xim
+gdm        1897   1892  0 Nov20 ?        00:00:00 /usr/lib/ibus/ibus-dconf
+gdm        1899   1738  0 Nov20 ?        00:00:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm        1901   1738  0 Nov20 ?        00:00:00 /usr/lib/ibus/ibus-portal
+gdm        1912   1738  0 Nov20 ?        00:00:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+gdm        1939   1738  0 Nov20 ?        00:00:17 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm        1940   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm        1941   1738  0 Nov20 ?        00:00:01 /usr/lib/gnome-settings-daemon/gsd-power
+gdm        1942   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-wwan
+gdm        1944   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm        1947   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm        1948   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm        1950   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm        1955   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm        1959   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm        1961   1738  0 Nov20 ?        00:00:06 /usr/lib/gnome-settings-daemon/gsd-color
+gdm        1965   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm        1998   1738  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-printer
+colord     2019      1  0 Nov20 ?        00:00:00 /usr/lib/colord/colord
+gdm        2032   1892  0 Nov20 ?        00:00:00 /usr/lib/ibus/ibus-engine-simple
+root       2067      2  0 Nov20 ?        00:00:09 [kworker/6:1H-kblockd]
+root       2068      2  0 Nov20 ?        00:00:22 [kworker/25:1H-kblockd]
+root       2070      2  0 Nov20 ?        00:00:16 [kworker/32:1H-kblockd]
+root       2071      2  0 Nov20 ?        00:00:02 [kworker/41:1H-kblockd]
+whoopsie   2083      1  0 Nov20 ?        00:00:00 /usr/bin/whoopsie -f
+kernoops   2092      1  0 Nov20 ?        00:02:58 /usr/sbin/kerneloops --test
+kernoops   2105      1  0 Nov20 ?        00:02:46 /usr/sbin/kerneloops
+root       2247   1640  0 Nov20 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+brendan    2272      1  0 Nov20 ?        00:00:03 /lib/systemd/systemd --user
+brendan    2273   2272  0 Nov20 ?        00:00:00 (sd-pam)
+brendan    2293   2272  0 Nov20 ?        00:11:21 /usr/bin/pulseaudio --daemonize=no
+brendan    2296      1  0 Nov20 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+brendan    2303   2272  0 Nov20 ?        00:00:14 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       2305      2  0 Nov20 ?        00:00:00 [krfcommd]
+brendan    2307   2247  0 Nov20 tty2     00:00:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+root       2309   2307  0 Nov20 tty2     01:13:01 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+brendan    2318   2307  0 Nov20 tty2     00:00:00 /usr/lib/gnome-session/gnome-session-binary --systemd --systemd --session=ubuntu
+brendan    2388   2318  0 Nov20 ?        00:00:03 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+brendan    2408   2272  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfsd
+brendan    2415   2272  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+brendan    2438   2272  0 Nov20 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+brendan    2443   2438  0 Nov20 ?        00:00:02 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+brendan    2453   2272  0 Nov20 ?        00:00:13 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+brendan    2455   2272  0 Nov20 ?        00:00:28 /usr/libexec/xdg-desktop-portal
+brendan    2461   2272  0 Nov20 ?        00:00:00 /usr/libexec/xdg-document-portal
+brendan    2464   2272  0 Nov20 ?        00:00:00 /usr/libexec/xdg-permission-store
+brendan    2473   2272  0 Nov20 ?        00:00:21 /usr/libexec/xdg-desktop-portal-gtk
+brendan    2482   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-session/gnome-session-ctl --monitor
+brendan    2486   2272  0 Nov20 ?        00:00:00 /usr/lib/dconf/dconf-service
+brendan    2494   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-session/gnome-session-binary --systemd-service --session=ubuntu
+brendan    2519   2272  0 Nov20 ?        00:46:35 /usr/bin/gnome-shell
+brendan    2550   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+brendan    2554   2272  0 Nov20 ?        00:00:00 /usr/libexec/evolution-source-registry
+brendan    2562   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
+brendan    2571   2272  0 Nov20 ?        00:02:15 /usr/lib/gnome-online-accounts/goa-identity-service
+brendan    2576   2272  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+brendan    2581   2272  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+brendan    2585   2272  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+brendan    2589   2272  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+brendan    2594   2272  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+brendan    2601   2519  0 Nov20 ?        00:02:38 ibus-daemon --panel disable -r --xim
+brendan    2609   2601  0 Nov20 ?        00:00:00 /usr/lib/ibus/ibus-dconf
+brendan    2610   2408  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.8 /org/gtk/gvfs/exec_spaw/0
+brendan    2611   2601  0 Nov20 ?        00:00:35 /usr/lib/ibus/ibus-extension-gtk3
+brendan    2613   2272  0 Nov20 ?        00:00:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+brendan    2616   2272  0 Nov20 ?        00:00:00 /usr/lib/ibus/ibus-portal
+brendan    2633   2272  0 Nov20 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+brendan    2645   2272  0 Nov20 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+brendan    2655   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+brendan    2659   2272  0 Nov20 ?        00:00:08 /usr/lib/gnome-settings-daemon/gsd-color
+brendan    2660   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+brendan    2661   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+brendan    2662   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+brendan    2664   2272  0 Nov20 ?        00:00:17 /usr/lib/gnome-settings-daemon/gsd-xsettings
+brendan    2666   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+brendan    2669   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+brendan    2670   2272  0 Nov20 ?        00:00:41 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+brendan    2672   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-wwan
+brendan    2674   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+brendan    2676   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-sound
+brendan    2680   2272  0 Nov20 ?        00:00:01 /usr/lib/gnome-settings-daemon/gsd-media-keys
+brendan    2681   2272  0 Nov20 ?        00:00:03 /usr/lib/gnome-settings-daemon/gsd-power
+brendan    2683   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+brendan    2685   2272  0 Nov20 ?        00:01:44 /usr/lib/gnome-settings-daemon/gsd-sharing
+brendan    2722   2494  0 Nov20 ?        00:00:00 /usr/lib/tracker/tracker-miner-fs
+brendan    2733   2272  0 Nov20 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-printer
+brendan    2752   2494  0 Nov20 ?        00:00:02 /usr/libexec/evolution-data-server/evolution-alarm-notify
+brendan    2767   2494  0 Nov20 ?        00:00:00 /usr/lib/gnome-disk-utility/gsd-disk-utility-notify
+brendan    2825   2601  0 Nov20 ?        00:00:48 /usr/lib/ibus/ibus-engine-simple
+brendan    2895   2494  0 Nov20 ?        00:00:19 update-notifier
+brendan    2898   2494  0 Nov20 ?        00:01:15 /usr/bin/gnome-software --gapplication-service
+root       2933      1  0 Nov20 ?        00:00:10 /usr/lib/bolt/boltd
+root       3004      2  0 12:32 ?        00:00:00 [kworker/5:0-events]
+root       3008      2  0 12:32 ?        00:00:01 [kworker/4:2-events]
+brendan    3552    321  1 12:57 ?        00:02:26 /home/brendan/anaconda3/envs/embedding-base/bin/python -m ipykernel_launcher -f /home/brendan/.local/share/jupyter/runtime/kernel-b71dd78f-578a-4c76-89c3-45f8bf0fcb47.json
+root       3906   1620  0 13:13 ?        00:00:00 sshd: brendan [priv]
+brendan    3985   3906  0 13:13 ?        00:00:00 sshd: brendan@pts/2
+brendan    3986   3985  0 13:13 pts/2    00:00:00 -bash
+brendan    4187   2272  0 Nov20 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+root       6150      2  0 13:19 ?        00:00:02 [kworker/28:2-events]
+root       7272      2  0 13:19 ?        00:00:00 [kworker/38:1-events]
+root       7413      2  0 13:19 ?        00:00:00 [kworker/36:1-events]
+root       7699      2  0 13:19 ?        00:00:00 [kworker/37:0-events]
+root       7900      2  0 13:19 ?        00:00:00 [kworker/40:1-events]
+root       7913      2  0 13:19 ?        00:00:00 [kworker/13:2-events]
+root       8591      2  0 13:19 ?        00:00:02 [kworker/29:1-events]
+root       8716      2  0 13:19 ?        00:00:00 [kworker/22:2-events]
+root       8777      2  0 13:19 ?        00:00:01 [kworker/25:1-events]
+root       8930      2  0 13:19 ?        00:00:00 [kworker/14:2-events]
+root       9318   2247  0 Dec04 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root       9776      2  0 13:19 ?        00:00:00 [kworker/39:0-events]
+brendan   10149    321 17 13:21 ?        00:23:39 /home/brendan/anaconda3/envs/embedding-base/bin/python -m ipykernel_launcher -f /home/brendan/.local/share/jupyter/runtime/kernel-235747a8-3564-4f43-9259-5654a6d15908.json
+root      10274      2  0 13:24 ?        00:00:02 [kworker/4:0-events]
+root      10479      2  0 13:30 ?        00:00:00 [kworker/27:0-events]
+root      10483      2  0 13:30 ?        00:00:02 [kworker/27:3-events]
+root      11023      2  0 Dec04 ?        00:00:00 [loop13]
+root      11588      2  0 14:12 ?        00:00:00 [kworker/0:0-events]
+root      11728   1620  0 14:18 ?        00:00:00 sshd: jamshid [priv]
+jamshid   11813  11728  0 14:18 ?        00:00:00 sshd: jamshid@pts/12
+jamshid   11814  11813  0 14:18 pts/12   00:00:00 -bash
+jamshid   11833  11814  0 14:18 pts/12   00:00:00 tmux a -t playDB
+root      12007      2  0 14:26 ?        00:00:00 [kworker/0:1-events]
+root      12120      2  0 14:32 ?        00:00:01 [kworker/u257:2-events_unbound]
+root      12203      2  0 14:34 ?        00:00:00 [kworker/14:1-events]
+root      12633      2  0 14:51 ?        00:00:00 [kworker/38:2-events]
+root      12634      2  0 14:51 ?        00:00:00 [kworker/12:0-events]
+root      12644      2  0 Dec03 ?        00:00:00 [xfsalloc]
+root      12646      2  0 Dec03 ?        00:00:00 [xfs_mru_cache]
+root      12650      2  0 Dec03 ?        00:00:00 [jfsIO]
+root      12651      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12652      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12653      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12654      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12655      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12656      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12657      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12658      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12659      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12660      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12661      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12662      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12663      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12664      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12665      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12666      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12667      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12668      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12669      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12670      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12671      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12672      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12673      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12674      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12675      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12676      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12677      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12678      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12679      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12680      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12681      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12682      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12683      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12684      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12685      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12686      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12687      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12688      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12689      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12690      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12691      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12692      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12693      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12694      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12695      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12696      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12697      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12698      2  0 Dec03 ?        00:00:00 [jfsCommit]
+root      12699      2  0 Dec03 ?        00:00:00 [jfsSync]
+root      12731      2  0 14:52 ?        00:00:00 [kworker/u258:1-events_unbound]
+root      12758      2  0 14:54 ?        00:00:00 [kworker/u260:0-events_unbound]
+root      12931      2  0 15:01 ?        00:00:00 [kworker/u259:0-events_unbound]
+root      12934      2  0 15:02 ?        00:00:00 [kworker/u258:0-events_unbound]
+root      13005      2  0 15:04 ?        00:00:00 [kworker/u256:2-phy0]
+root      13192      2  0 15:13 ?        00:00:00 [kworker/u257:1-events_unbound]
+root      13306      2  0 15:17 ?        00:00:00 [kworker/42:1-events]
+root      13307      2  0 15:17 ?        00:00:00 [kworker/46:0-events]
+root      13340      2  0 15:18 ?        00:00:00 [kworker/u259:1-events_unbound]
+root      13476      2  0 15:24 ?        00:00:00 [kworker/u260:2-events_power_efficient]
+root      13503      2  0 15:26 ?        00:00:00 [kworker/u256:0-phy0]
+root      13550      2  0 15:27 ?        00:00:00 [kworker/u257:3-events_unbound]
+root      13606      2  0 15:28 ?        00:00:00 [kworker/15:1-events]
+root      13632      2  0 15:29 ?        00:00:00 [kworker/u259:3-events_unbound]
+root      13692      2  0 15:31 ?        00:00:00 [kworker/u256:1-cfg80211]
+root      13696      2  0 15:31 ?        00:00:00 [kworker/u258:2-events_unbound]
+root      13718      2  0 15:32 ?        00:00:00 [kworker/u260:1-events_unbound]
+root      13734      2  0 15:33 ?        00:00:00 [kworker/1:0-events]
+root      13739      2  0 15:33 ?        00:00:00 [kworker/u257:0-events_unbound]
+root      13764      2  0 15:34 ?        00:00:00 [kworker/47:1-events]
+root      13767      2  0 15:34 ?        00:00:00 [kworker/47:2-events]
+brendan   13788 130999  0 15:34 pts/11   00:00:00 ps -ef
+jamshid   14271      1  0 Nov26 ?        00:03:05 tmux new -s playDB
+jamshid   14272  14271  0 Nov26 pts/6    00:00:00 -bash
+root      15206      2  0 Dec07 ?        00:00:01 [kworker/45:2-rcu_par_gp]
+jamshid   15854  14271  0 Nov26 pts/7    00:00:00 -bash
+jamshid   15880  14271  0 Nov26 pts/8    00:00:00 -bash
+jamshid   17236 101186  0 Dec04 pts/3    00:00:02 mysql -u jamshid -px xxxxxxxxxxx
+root      21072      2  0 Dec07 ?        00:00:00 [kworker/31:0-events]
+root      21073      2  0 Dec07 ?        00:01:33 [kworker/6:1-events]
+root      24560      2  0 Dec07 ?        00:01:24 [kworker/7:3-events]
+root      28448   2247  0 Dec03 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root      28535   2247  0 Dec03 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root      28890      2  0 Dec08 ?        00:00:09 [kworker/46:1-events]
+root      31140   2247  0 Dec03 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+brendan   35003   2296  0 Nov22 ?        00:00:00 /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+root      36083   2247  0 Nov22 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root      36228   2247  0 Nov22 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root      37144   2272  0 Nov22 ?        00:00:00 dbus-launch --autolaunch=c6d351288fa34ceea38c61ee33caa53d --binary-syntax --close-stderr
+root      37145   2272  0 Nov22 ?        00:00:04 /usr/bin/dbus-daemon --syslog-only --fork --print-pid 5 --print-address 7 --session
+root      37148   2272  0 Nov22 ?        00:00:26 /usr/libexec/xdg-desktop-portal
+root      37152   2272  0 Nov22 ?        00:00:00 /usr/lib/gvfs/gvfsd
+root      37157   2272  0 Nov22 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /root/.cache/gvfs -f -o big_writes
+root      37165   2272  0 Nov22 ?        00:00:00 /usr/libexec/xdg-document-portal
+root      37169   2272  0 Nov22 ?        00:00:00 /usr/libexec/xdg-permission-store
+root      37179   2272  0 Nov22 ?        00:00:11 /usr/libexec/xdg-desktop-portal-gtk
+root      37187   2272  0 Nov22 ?        00:00:00 /usr/lib/dconf/dconf-service
+root      39656   2247  0 Dec03 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root      40468      2  0 Dec08 ?        00:00:00 [kworker/32:2-events]
+brendan   42105      1  0 Dec08 ?        00:00:00 SCREEN
+brendan   42106  42105  0 Dec08 pts/10   00:00:00 /bin/bash
+root      43781      2  0 Nov23 ?        00:00:00 [loop12]
+root      54749      2  0 Dec05 ?        00:00:00 [loop10]
+root      54796      1  0 Dec05 ?        00:01:03 /usr/lib/snapd/snapd
+root      57066      2  0 Dec08 ?        00:00:02 [kworker/17:0-rcu_gp]
+root      60877   2247  0 Nov25 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root      66480      2  0 Dec05 ?        00:01:57 [kworker/30:1-events]
+root      66934  37152  0 Dec05 ?        00:00:01 /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0
+root      66946   2272  0 Dec05 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+root      66953   2272  0 Dec05 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+root      66958   2272  0 Dec05 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+root      66963   2272  0 Dec05 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+root      66969   2272  0 Dec05 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+root      66973   2272  0 Dec05 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
+root      66980   2272  0 Dec05 ?        00:01:43 /usr/lib/gnome-online-accounts/goa-identity-service
+root      66987   2272  0 Dec05 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+root      67811      2  0 Dec05 ?        00:01:57 [kworker/31:2-events]
+gdm       67831   1738  0 Nov26 ?        00:00:00 /usr/lib/dconf/dconf-service
+root      68875      2  0 Dec08 ?        00:00:01 [kworker/37:3-events]
+root      69442      2  0 Dec09 ?        00:00:01 [kworker/41:1-rcu_par_gp]
+root      69453      2  0 Dec09 ?        00:00:01 [kworker/40:0-rcu_par_gp]
+root      69457      2  0 Dec09 ?        00:00:01 [kworker/16:1-rcu_par_gp]
+root      69459      2  0 Dec09 ?        00:00:03 [kworker/39:2-rcu_gp]
+root      69466      2  0 Dec09 ?        00:00:04 [kworker/17:1-events]
+root      69485      2  0 Dec09 ?        00:00:00 [kworker/9:1-events]
+root      73324   2247  0 Dec05 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root      73617   2247  0 Dec05 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+jamshid   77900      1  0 Nov26 ?        00:00:00 /lib/systemd/systemd --user
+jamshid   77901  77900  0 Nov26 ?        00:00:00 (sd-pam)
+jamshid   78001  77900  0 Nov26 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+jamshid   79339  14271  0 Dec05 pts/0    00:00:00 -bash
+jamshid   79366  14271  0 Dec05 pts/1    00:00:00 -bash
+jamshid   82754  15854  2 Dec04 pts/7    04:19:59 htop
+mysql     85340      1  6 Dec05 ?        08:04:02 /usr/sbin/mysqld
+jamshid   87026  14271  0 Nov27 pts/5    00:00:00 -bash
+root      87931      2  0 Dec09 ?        00:00:02 [kworker/41:2-events]
+brendan   88081 102876  0 Dec09 pts/4    00:00:26 /home/brendan/anaconda3/envs/embedding-base/bin/python /home/brendan/anaconda3/envs/embedding-base/bin/jupyter-notebook
+brendan   88192 102892  0 Dec09 ?        00:00:24 /usr/lib/firefox/firefox -contentproc -childID 70 -isForBrowser -prefsLen 9907 -prefMapSize 205141 -parentBuildID 20191031091608 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 102892 true tab
+brendan   88236 102892  0 Dec09 ?        00:04:09 /usr/lib/firefox/firefox -contentproc -childID 71 -isForBrowser -prefsLen 9907 -prefMapSize 205141 -parentBuildID 20191031091608 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 102892 true tab
+root      90082      2  0 Dec09 ?        00:00:02 [kworker/16:2-events]
+brendan   90718 102892  0 Dec09 ?        00:01:07 /usr/lib/firefox/firefox -contentproc -childID 80 -isForBrowser -prefsLen 9907 -prefMapSize 205141 -parentBuildID 20191031091608 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 102892 true tab
+root      90763      2  0 Dec09 ?        00:00:02 [kworker/36:2-events]
+root      92095      2  0 Dec09 ?        00:00:02 [kworker/13:0-events]
+root      93578      2  0 Dec09 ?        00:00:19 [kworker/34:1-rcu_gp]
+root      93766      2  0 Dec09 ?        00:00:00 [kworker/23:0-events]
+root      93779      2  0 Dec09 ?        00:00:03 [kworker/12:4-events]
+root      94344      2  0 Dec09 ?        00:00:31 [kworker/28:1-events]
+root      94348      2  0 Dec09 ?        00:00:00 [kworker/21:2-events]
+brendan   94487   2408  0 Dec02 ?        00:00:00 /usr/lib/gvfs/gvfsd-network --spawner :1.8 /org/gtk/gvfs/exec_spaw/1
+root      94517      2  0 Dec09 ?        00:00:00 [kworker/22:0-events]
+root      94518      2  0 Dec09 ?        00:00:00 [kworker/19:2-events]
+brendan   94522   2408  0 Dec02 ?        00:00:12 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.8 /org/gtk/gvfs/exec_spaw/3
+root      94532      2  0 Dec09 ?        00:00:02 [kworker/19:3-events]
+root      95036      2  0 Dec09 ?        00:00:03 [kworker/45:1-events]
+brendan   95101  88081  0 Dec09 ?        00:00:51 /home/brendan/anaconda3/envs/embedding-base/bin/python -m ipykernel_launcher -f /home/brendan/.local/share/jupyter/runtime/kernel-b599ced4-2dca-4958-ac67-39a1587e0af0.json
+root      95231      2  0 Dec09 ?        00:00:03 [kworker/21:0-events]
+brendan   95269  88081  0 Dec09 ?        00:03:14 /home/brendan/anaconda3/envs/embedding-base/bin/python -m ipykernel_launcher -f /home/brendan/.local/share/jupyter/runtime/kernel-4f4c0631-0840-4a37-bd69-de0c16d93892.json
+brendan   95529 102892  0 Dec09 ?        00:02:33 /usr/lib/firefox/firefox -contentproc -childID 98 -isForBrowser -prefsLen 9907 -prefMapSize 205141 -parentBuildID 20191031091608 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 102892 true tab
+root      95588      2  0 Dec09 ?        00:00:14 [kworker/2:0-events]
+brendan   96005 102892  0 Dec09 ?        00:00:00 /usr/lib/firefox/firefox -contentproc -childID 100 -isForBrowser -prefsLen 9907 -prefMapSize 205141 -parentBuildID 20191031091608 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 102892 true tab
+root      96084      2  0 Dec09 ?        00:00:05 [kworker/1:1-rcu_par_gp]
+root      96086      2  0 Dec09 ?        00:00:10 [kworker/24:0-events]
+root      97026      2  0 Dec09 ?        00:00:02 [kworker/20:2-events]
+root      98654      2  0 Dec09 ?        00:00:09 [kworker/42:3-events]
+root      99599      2  0 Dec09 ?        00:00:02 [kworker/47:3-events]
+jamshid  101186  14271  0 Dec02 pts/3    00:00:02 -bash
+root     101310      2  0 Dec09 ?        00:00:02 [kworker/23:1-events]
+jamshid  101624  14272 96 Dec09 pts/6    21:59:44 /home/jamshid/anaconda3/bin/python /home/jamshid/anaconda3/bin/ipython
+brendan  102865   2272  0 Dec06 ?        00:02:29 /usr/libexec/gnome-terminal-server
+brendan  102876 102865  0 Dec06 pts/4    00:00:00 bash
+brendan  102892   2272  0 Dec06 ?        00:34:43 /usr/lib/firefox/firefox -new-window
+brendan  102953 102892  0 Dec06 ?        00:38:04 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 205141 -parentBuildID 20191031091608 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 102892 true tab
+brendan  103013 102892  0 Dec06 ?        00:01:22 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 6894 -prefMapSize 205141 -parentBuildID 20191031091608 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 102892 true tab
+brendan  103551 102865  0 Dec06 pts/9    00:00:00 bash
+root     105058      2  0 Dec09 ?        00:00:02 [kworker/15:0-rcu_gp]
+root     107023      2  0 Dec06 ?        00:01:32 [kworker/32:1-events]
+root     107055   2247  0 Dec06 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+jamshid  107203  79339  0 Dec06 pts/0    00:00:00 vi /etc/fstab
+root     108233      2  0 Dec06 ?        00:02:11 [kworker/9:0-events]
+root     109975      2  0 Dec09 ?        00:00:05 [kworker/10:3-rcu_par_gp]
+root     110160      2  0 Dec09 ?        00:00:00 [kworker/43:0-rcu_gp]
+root     111793      2  0 Dec02 ?        00:00:00 [scsi_eh_10]
+root     111794      2  0 Dec02 ?        00:00:00 [scsi_tmf_10]
+root     111870      2  0 Dec09 ?        00:00:09 [kworker/1:2-rcu_gp]
+root     111872      2  0 Dec09 ?        00:00:23 [kworker/3:2-mm_percpu_wq]
+root     111883      2  0 Dec09 ?        00:00:00 [kworker/26:2-events]
+root     111886      1  0 Dec02 ?        00:01:24 /sbin/mount.ntfs /dev/sda1 /media/brendan/Seagate Backup Plus Drive -o rw,nodev,nosuid,windows_names,uid=1000,gid=1000,uhelper=udisks2
+brendan  111946   2408  0 Dec02 ?        00:00:00 /usr/lib/gvfs/gvfsd-recent --spawner :1.8 /org/gtk/gvfs/exec_spaw/4
+brendan  113017 103551  3 Dec06 pts/9    03:03:03 htop
+root     113093      2  0 Dec09 ?        00:00:07 [kworker/26:0-events]
+root     114960      2  0 00:00 ?        00:00:00 [kworker/43:2-events]
+root     114961      2  0 00:00 ?        00:00:00 [kworker/44:1-events]
+root     114976      2  0 00:00 ?        00:00:00 [kworker/6:2-events]
+root     114979      1  0 00:00 ?        00:00:00 /usr/sbin/cupsd -l
+root     114981      1  0 00:00 ?        00:00:01 /usr/sbin/cups-browsed
+lp       115011 114979  0 00:00 ?        00:00:00 /usr/lib/cups/notifier/dbus dbus://
+root     116862      2  0 01:18 ?        00:00:18 [kworker/10:0-events]
+root     117256      2  0 01:18 ?        00:00:08 [kworker/8:0-events]
+jamshid  117751  15880  0 Dec06 pts/8    00:01:14 /home/jamshid/anaconda3/bin/python /home/jamshid/anaconda3/bin/jupyter-notebook --no-browser --port=8891
+brendan  119628 102892  0 Dec06 ?        00:02:19 /usr/lib/firefox/firefox -contentproc -childID 69 -isForBrowser -prefsLen 9998 -prefMapSize 205141 -parentBuildID 20191031091608 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 102892 true tab
+root     119891      2  0 03:18 ?        00:00:01 [kworker/18:2-events]
+root     119894      2  0 03:18 ?        00:00:00 [kworker/20:0-events]
+root     122151      2  0 05:07 ?        00:00:00 [kworker/29:2-events]
+root     122719      2  0 05:32 ?        00:00:03 [kworker/35:1-events]
+root     123517      2  0 06:12 ?        00:00:04 [kworker/11:1-events]
+root     123526      2  0 06:12 ?        00:00:10 [kworker/34:2-events]
+root     123980      2  0 06:17 ?        00:00:00 [kworker/47:0-events]
+root     124632      2  0 06:49 ?        00:00:00 [kworker/3:0-events]
+root     125008      2  0 06:49 ?        00:00:00 [kworker/44:2-events]
+root     125509      2  0 06:49 ?        00:00:00 [kworker/7:0-events]
+root     125510      2  0 06:49 ?        00:00:12 [kworker/8:1-events]
+root     125966      2  0 Dec06 ?        00:00:13 [kworker/18:0-rcu_gp]
+root     127681      2  0 08:30 ?        00:00:01 [kworker/25:2-events]
+root     127684      2  0 08:30 ?        00:00:00 [kworker/24:2-events]
+root     128054      2  0 08:49 ?        00:00:07 [kworker/30:2-events]
+root     129008      2  0 09:34 ?        00:00:06 [kworker/35:0-events]
+root     129204      2  0 09:42 ?        00:00:07 [kworker/11:2-events]
+root     129234      2  0 09:42 ?        00:00:05 [kworker/33:0-events]
+jamshid  129735  87026  0 10:06 pts/5    00:00:00 emacs data/extractors.py
+root     129853      2  0 10:11 ?        00:00:00 [kworker/33:1-events]
+root     130920   1620  0 11:00 ?        00:00:00 sshd: brendan [priv]
+brendan  130998 130920  0 11:00 ?        00:00:00 sshd: brendan@pts/11
+brendan  130999 130998  0 11:00 pts/11   00:00:00 -bash
+root     131050      2  0 11:00 ?        00:00:00 [kworker/2:2]

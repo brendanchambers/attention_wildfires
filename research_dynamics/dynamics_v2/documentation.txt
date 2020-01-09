@@ -1,0 +1,31 @@
+# documentation
+
+
+try_2018
+    takes -
+    database
+    pretrained umap reducer
+    
+    creates - 
+    pmids [ sample ] [ cluster]
+    summary_coords [ sample ] [ cluster]
+    
+run_pmids2vec
+    train word2vec model for a group of pmids
+    calls pmids2vec & pmids2corpus helper functions
+    
+compare worlds
+    compare the word2 vec models trained on the 2018 clusters
+    
+compare overlapping worlds
+    compare the word2vec models trained on the 2018 clusters - shared words only
+    
+    
+    
+scratch:
+
+try_network_viz
+
+try_cluster_hotspots
+
+sandbox
