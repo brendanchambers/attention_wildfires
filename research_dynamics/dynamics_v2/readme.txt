@@ -16,6 +16,11 @@ current version Jan 30 2020
 
 ## data files
 
+    data processing 
+            first CCA analysis pass went here
+            
+    data processing feb2020
+            next analysis pass
 
 
 ## library files
@@ -33,12 +38,17 @@ try_2018
     cluster articles using hdbscan for each sample
     save the pmids and their respective clusters (export as json)
     
+sample_and_cluster_PMIDs
+    new and improved version of try_2018 (todo update this readme)
+    
 run_pmids2vec
     take the clustered pmids generated in try_2018
     train a word2vec model for each
     also export the corresponding corpuses generated based on each pmid cluster
                 (for use in nulls and other analysis)
        depends on pmids2vec.py and pmids2corpus.py
+       
+    train w2v models on title text (using a larger sample)
 
 explain_clusters
     load word2vec models trained on multiple clusters (research worlds)
