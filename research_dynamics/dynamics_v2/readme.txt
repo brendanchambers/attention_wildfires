@@ -62,10 +62,65 @@ compare_overlapping_worlds
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 _____________________________________________
 
 older readme:
 
+
+# documentation
+
+
+try_2018
+    takes -
+    database
+    pretrained umap reducer
+    
+    creates - 
+    pmids [ sample ] [ cluster]
+    summary_coords [ sample ] [ cluster]
+    
+run_pmids2vec
+    train word2vec model for a group of pmids
+    calls pmids2vec & pmids2corpus helper functions
+    
+
+compare overlapping worlds   (transform clustering to word2vec model)
+    compare the word2vec models trained on the 2018 clusters - shared words only
+    newer version of compare worlds
+    
+explain_clusters
+    qualify character of each big cluster
+    
+    
+scratch (eventually delete these):
+
+try_network_viz
+
+try_cluster_hotspots
+
+sandbox
+
+compare worlds   (transform clustering to word2vec model)
+    compare the word2 vec models trained on the 2018 clusters
+    
+    
+______________________
+
+older:
 
 yearstep_by_sampling
 
