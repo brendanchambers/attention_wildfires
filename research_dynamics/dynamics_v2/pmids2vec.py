@@ -158,13 +158,13 @@ def pmids2vec_titlesOnly(PMIDs, save_prefix):
     savepath_corpus = save_prefix + '_titles__corpus.json'
     with open(savepath_corpus,'w') as f:
         print('saving corpus of titles to {}'.format(savepath_corpus))
-        json.dump(corpus, f)
+        json.dump(corpus, f, indent=2, sort_keys=True)
         
     # train a word2vec model using these titles
     start_time = time.time()
     print('training word2vec model...')
-    D = 20
-    W = 5
+    D = 10
+    W = 25
     COUNT = 10
     print('params: {} dimensions, {} window size, {} min count'.format(D, W, COUNT))
     model = Word2Vec(corpus, size=D, window=W, min_count=COUNT, workers=16)

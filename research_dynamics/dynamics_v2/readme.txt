@@ -32,14 +32,14 @@ current version Jan 30 2020
 
 ##  notebook files
 
-try_2018
-    check the collection of publications in this year
-    take 2 samples of size k
-    cluster articles using hdbscan for each sample
-    save the pmids and their respective clusters (export as json)
     
 sample_and_cluster_PMIDs
-    new and improved version of try_2018 (todo update this readme)
+    check the collection of publications in this year
+    take M samples of size K
+    cluster articles using hdbscan for each sample
+    assume each clustering has the same number of clusters (luckily it seems stable)
+    re-label the clusters for consistency based on location
+    save the pmids and their respective clusters (export as json)
     
 run_pmids2vec
     take the clustered pmids generated in try_2018
@@ -54,6 +54,9 @@ explain_clusters
     load word2vec models trained on multiple clusters (research worlds)
     look at the semantic network for each world
     use high eig central words to characterize each world
+
+unpack_clusters_by_centrality
+    updated version of explain_clusters
 
 try_CCA
     take 2 research worlds
@@ -127,6 +130,11 @@ sandbox
 compare worlds   (transform clustering to word2vec model)
     compare the word2 vec models trained on the 2018 clusters
     
+try_2018
+    check the collection of publications in this year
+    take 2 samples of size k
+    cluster articles using hdbscan for each sample
+    save the pmids and their respective clusters (export as json)
     
 ______________________
 

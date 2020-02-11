@@ -85,7 +85,7 @@ def pmids2corpus(PMIDs, save_path):
     # todo write corpus
     with open(save_path,'w') as f:
         print('saving new work to {}'.format(save_path))
-        json.dump(corpus, f)
+        json.dump(corpus, f, indent=2, sort_keys=True)
 
 
 
