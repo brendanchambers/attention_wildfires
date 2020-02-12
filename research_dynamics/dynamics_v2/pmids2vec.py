@@ -85,7 +85,7 @@ def pmids2vec(PMIDs, save_path):
     start_time = time.time()
     print('training word2vec model...')
     D = 20
-    W = 5
+    W = 25
     COUNT = 10
     print('params: {} dimensions, {} window size, {} min count'.format(D, W, COUNT))
     model = Word2Vec(corpus, size=D, window=W, min_count=COUNT, workers=16)
@@ -163,7 +163,7 @@ def pmids2vec_titlesOnly(PMIDs, save_prefix):
     # train a word2vec model using these titles
     start_time = time.time()
     print('training word2vec model...')
-    D = 10
+    D = 20
     W = 25
     COUNT = 10
     print('params: {} dimensions, {} window size, {} min count'.format(D, W, COUNT))
