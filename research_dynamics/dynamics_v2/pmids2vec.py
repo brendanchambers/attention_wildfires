@@ -81,12 +81,14 @@ def pmids2vec(PMIDs, save_path):
         words_clean = str.split(p_clean,' ')
         corpus.append(words_clean)
         
+    MIN_APPEARANCE_FRACTION = 0.01  # word must appear in about 1% of abstracts on average
+        
     # train a word2vec model using these abstracts
     start_time = time.time()
     print('training word2vec model...')
     D = 20
-    W = 25
-    COUNT = 10
+    W = 5
+    COUNT = int(len(PMIDs) * MIN_APPEARANCE_FRACTION)
     print('params: {} dimensions, {} window size, {} min count'.format(D, W, COUNT))
     model = Word2Vec(corpus, size=D, window=W, min_count=COUNT, workers=16)
     end_time = time.time()
@@ -160,12 +162,14 @@ def pmids2vec_titlesOnly(PMIDs, save_prefix):
         print('saving corpus of titles to {}'.format(savepath_corpus))
         json.dump(corpus, f, indent=2, sort_keys=True)
         
+    MIN_APPEARANCE_FRACTION = 0.001  # 0.1 % of titles
+    
     # train a word2vec model using these titles
     start_time = time.time()
     print('training word2vec model...')
     D = 20
-    W = 25
-    COUNT = 10
+    W = 5
+    COUNT = int(len(PMIDs) * MIN_APPEARANCE_FRACTION)
     print('params: {} dimensions, {} window size, {} min count'.format(D, W, COUNT))
     model = Word2Vec(corpus, size=D, window=W, min_count=COUNT, workers=16)
     end_time = time.time()
