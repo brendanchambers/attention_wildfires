@@ -6,3 +6,5 @@
 *.npy
 *.model
 *.mdl
+*.pdf
+*.eps
