@@ -87,7 +87,7 @@ def pmids2vec(PMIDs, save_path):
     start_time = time.time()
     print('training word2vec model...')
     D = 20
-    W = 5
+    W = 2
     COUNT = int(len(PMIDs) * MIN_APPEARANCE_FRACTION)
     print('params: {} dimensions, {} window size, {} min count'.format(D, W, COUNT))
     model = Word2Vec(corpus, size=D, window=W, min_count=COUNT, workers=16)
@@ -168,7 +168,7 @@ def pmids2vec_titlesOnly(PMIDs, save_prefix):
     start_time = time.time()
     print('training word2vec model...')
     D = 20
-    W = 5
+    W = 3
     COUNT = int(len(PMIDs) * MIN_APPEARANCE_FRACTION)
     print('params: {} dimensions, {} window size, {} min count'.format(D, W, COUNT))
     model = Word2Vec(corpus, size=D, window=W, min_count=COUNT, workers=16)
